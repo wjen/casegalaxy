@@ -11,8 +11,8 @@ var User        = require("../models/user"),
 var userAuth = function (req, res, next) {
   // find the user
   User.findOne({
-      phoneNumber: req.body.phoneNumber
-    }).select('phoneNumber password name').exec(function(err, user) {
+      email: req.body.email
+    }).select('email password name').exec(function(err, user) {
 
       if (err) throw err;
 
@@ -36,7 +36,7 @@ var userAuth = function (req, res, next) {
           // if user is found and password is right
           // create a token
           var token = jwt.sign({
-            phoneNumber: user.phoneNumber,
+            email:       user.email,
             name:        user.name,
             _id:         user._id
           }, superSecret, {
@@ -62,7 +62,7 @@ var userAuth = function (req, res, next) {
 //||||||||||||||||||||||||||--
 var tokenVerify = function(req, res, next) {
   // do logging
-  console.log('Somebody just accessed the Fishin Triumphs API!');
+  console.log('Somebody just accessed the CaseGalaxy API!');
 
   // check header or url parameters or post parameters for token
   var token = req.body.token || req.query.token || req.headers['x-access-token'];
@@ -145,8 +145,77 @@ var show = function(req, res, next){
   });
 };
 
+//||||||||||||||||||||||||||--
+// GET USER
+//||||||||||||||||||||||||||--
+var userShow = function(req, res) {
+  User.findById(req.params.id, function(err, user) {
+        if (err) res.send(err);
+
+        // return that user
+        res.json(user);
+  });
+};
+
+//||||||||||||||||||||||||||--
+// GET USERS
+//||||||||||||||||||||||||||--
+var usersAll = function(req, res) {
+  User.find({}, function(err, users) {
+        if (err) res.send(err);
+
+        // return the users
+        res.json(users);
+  });
+}
+
+//||||||||||||||||||||||||||--
+// UPDATE USER
+//||||||||||||||||||||||||||--
+var userUpdate = function(req, res) {
+  User.findById(req.params.id, function(err, user) {
+
+        if (err) res.send(err);
+
+        // set the new user information if it exists in the request
+        if (req.body.name)        user.name        = req.body.name;
+        if (req.body.email)       user.email       = req.body.email;
+        if (req.body.password)    user.password    = req.body.password;
+
+        // save the user
+        user.save(function(err) {
+          if (err) res.send(err);
+
+          // return a message
+          res.json({ message: 'User updated!' });
+        });
+  });
+}
+
+//||||||||||||||||||||||||||--
+// DELETE USER
+//||||||||||||||||||||||||||--
+var userDelete = function(req, res) {
+  User.remove({
+        _id: req.params.id
+      }, function(err, user) {
+        if (err) res.send(err);
+
+        res.json({ message: 'Successfully deleted' });
+  });
+}
+
+//||||||||||||||||||||||||||--
+// EXPORT MODULE
+//||||||||||||||||||||||||||--
 module.exports = {
-  index: index,
-  show:  show,
-  userCreate: userCreate
+  index:        index,
+  show:         show,
+  userAuth:     userAuth,
+  tokenVerify:  tokenVerify,
+  userCreate:   userCreate,
+  userShow:     userShow,
+  usersAll:     usersAll,
+  userUpdate:   userUpdate,
+  userDelete:   userDelete
 };

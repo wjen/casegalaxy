@@ -1,5 +1,5 @@
 var express = require('express'),
-    router  = new express.Router();
+    router  = express.Router();
 
 // Require controllers.
 var pagesController = require('../controllers/pages');

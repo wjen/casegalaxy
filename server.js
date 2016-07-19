@@ -14,6 +14,14 @@ var env      = require('./config/environment'),
 // Instantiate a server application.
 var app = express();
 
+var allowCrossDomain = function(req, res, next) {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Headers', 'Content-Type');
+  next();
+}
+
+// uncomment after placing your favicon in /img
+// app.use(favicon(path.join(__dirname, 'public/assets/img', 'derry.ico')));
 // Configure the application (and set it's title!).
 app.set('title', env.TITLE);
 app.set('safe-title', env.SAFE_TITLE);
@@ -30,6 +38,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(cookieParser('notsosecretnowareyou'));
+app.use(allowCrossDomain);
+
 
 // Routing layers: favicon, static assets, dynamic routes, or 404…
 
