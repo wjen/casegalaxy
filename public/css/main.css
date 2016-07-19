@@ -15,9 +15,20 @@ a { color: #00B7FF; }
 .footer{
   border-top: 1px solid gray;
   clear: both;
+  margin: 30px 0px 0px 0px;
+
 }
 #topnav {
   display: block;
   margin-bottom: 20px;
   clear: both;
+}
+
+.cen-jus {
+  text-align: center;
+}
+
+
+.left-jus {
+  float: left;
 }

@@ -4,10 +4,15 @@
   angular.module("caseGalaxy")
     .controller("MainController", MainController);
 
-  MainController.$inject = [];
+  MainController.$inject = ["$state", "userDataService", "$log", "authService"];
 
-  function MainController() {
+  function MainController($state, userDataService, $log, authService) {
     var vm = this;
+    vm.userService = userDataService;
+    vm.logout      = authService.logout;
+    vm.isLoggedIn  = authService.isLoggedIn;
+
+    vm.$state = $state;
 
 
   };

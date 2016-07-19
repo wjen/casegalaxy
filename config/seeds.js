@@ -4,12 +4,14 @@ var User = require('../models/user');
 
 var users = [
   { // 0
-    handle: "DunkLord",
-    name:   "Bob Neverdunk"
+    name:   "wen1",
+    email: "abc@gmail.com",
+    password: "abc123"
   },
   { // 1
-    handle: "MoneyMarge",
-    name:   "Margaret Kalanchoe"
+    name:   "wen2",
+    email: "abcd@gmail.com",
+    password: "abcd123"
   }
 ];
 
