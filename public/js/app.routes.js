@@ -13,17 +13,17 @@
         templateUrl: "/templates/home.html",
         controller: "LoginController",
         controllerAs: "vm"
+      })
+      .state("aboutPage", {
+        url: "/about",
+        templateUrl:  "/templates/about.html"
+      })
+      .state("signUpPage", {
+        url: "/signup",
+        templateUrl: "/templates/signup.html",
+        controller: "UsersController",
+        controllerAs: "vm"
       });
-      // .state("aboutPage", {
-      //   url: "/about",
-      //   templateUrl:  "/templates/about.html"
-      // })
-      // .state("register", {
-      //   url: "/register",
-      //   templateUrl: "/templates/register.html",
-      //   controller: "UsersController",
-      //   controllerAs: "vm"
-      // })
       // .state("triumphs", {
       //   url: "/triumphs",
       //   templateUrl: "/templates/triumphs.html",
