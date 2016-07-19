@@ -40,7 +40,7 @@ var userAuth = function (req, res, next) {
             name:        user.name,
             _id:         user._id
           }, superSecret, {
-            expiresInMinutes: 43200 // expires in 30 days
+            expiresIn: '7 days'
           });
 
           // return the information including token as JSON

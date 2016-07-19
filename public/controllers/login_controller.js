@@ -18,10 +18,10 @@
     vm.loginData;
 
     function login() {
-      authService.login(vm.loginData.phoneNumber, vm.loginData.password)
+      authService.login(vm.loginData.email, vm.loginData.password)
         .then(function(res) {
           $log.log(res.data);
-          $state.go('triumphs');
+          $state.go('homePage');
         });
     };
 

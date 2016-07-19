@@ -1,5 +1,5 @@
-var mongoose = require('mongoose'),
-    debug    = require('debug')('app:models'),
+var mongoose     = require('mongoose'),
+    debug        = require('debug')('app:models'),
     Schema       = mongoose.Schema,
     bcrypt       = require('bcrypt-nodejs');
 
@@ -8,10 +8,10 @@ var userSchema = new Schema({
   name:     { type: String, required: true },
   email:    {
              type: String,
-             lowercase: true,
+             // lowercase: true,
              required: true,
-             index: { unique: true},
-             validate: /[\w+\-.]+@[a-z\.]+\.[a-z]+/i
+             // index: { unique: true},
+             // validate: /[\w+\-.]+@[a-z\.]+\.[a-z]+/i
   },
   password: {
              type: String,
