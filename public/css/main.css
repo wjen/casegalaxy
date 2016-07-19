@@ -12,16 +12,21 @@ body {
 
 a { color: #00B7FF; }
 
+/*navbar header*/
+#homeLogo {
+  height: 48px;
+  width: 120px;
+}
+.navbar-brand {
+  padding: 0;
+  margin-top: 2px;
+}
+
 .footer{
   border-top: 1px solid gray;
   clear: both;
   margin: 30px 0px 0px 0px;
 
-}
-#topnav {
-  display: block;
-  margin-bottom: 20px;
-  clear: both;
 }
 
 .cen-jus {

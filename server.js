@@ -20,9 +20,9 @@ var allowCrossDomain = function(req, res, next) {
   next();
 }
 
-// uncomment after placing your favicon in /img
-// app.use(favicon(path.join(__dirname, 'public/assets/img', 'derry.ico')));
-// Configure the application (and set it's title!).
+
+app.use(favicon(path.join(__dirname, 'public/images', 'pcgico.png')));
+// Configure the application.
 app.set('title', env.TITLE);
 app.set('safe-title', env.SAFE_TITLE);
 // EJS view engine config
