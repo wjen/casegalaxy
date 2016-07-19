@@ -3,9 +3,9 @@
   angular.module("caseGalaxy")
          .controller('UsersController', UsersController);
 
-  UsersController.$inject = ['$state', 'authService', 'userDataService', '$log'];
+  UsersController.$inject = ['$state', 'authService', 'authToken', 'userDataService', '$log'];
 
-  function UsersController($state, authService, userDataService, $log) {
+  function UsersController($state, authService, authToken, userDataService, $log) {
     var vm = this;
 
     vm.currentUser = userDataService.user;
@@ -19,7 +19,10 @@
       // use the create function in the userService
       userDataService.create(vm.userData)
         .success(function(data) {
-          vm.userData = {};
+          authToken.setToken(data.token);
+          // set userDataService.user to the logged in user
+          userDataService.user = data.user;
+          vm.userData = data.user;
           vm.message = data.message;
           console.log(vm.message);
         });

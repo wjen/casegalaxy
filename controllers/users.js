@@ -115,10 +115,22 @@ var userCreate = function(req, res) {
         return res.json(err);
     }
 
-    // return a message
-    res.json({ message: "Welcome message for you!" });
-  });
+    var token = jwt.sign({
+      email:       user.email,
+      name:        user.name,
+      _id:         user._id
+    }, superSecret, {
+      expiresIn: '7 days'
+    });
 
+    // return the information including token as JSON
+    res.json({
+      success: true,
+      message: 'Successfully signed up!',
+      token: token,
+      user: user
+    });
+  });
 };
 
 
