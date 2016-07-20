@@ -7,5 +7,13 @@ var mongoose     = require('mongoose'),
 var categorySchema = new Schema({
   category:     { type: String, required
                   enum: ["Phone Cases", "Screen Protectors", "Car Chargers"]
-                },
+  },
 });
+
+
+//Create the model using schema.
+var Category = mongoose.model("Item", itemSchema);
+
+// Export the model of the Item.
+module.exports = Category;
+
