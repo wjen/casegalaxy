@@ -9,9 +9,11 @@ var usersController = require('../controllers/users');
 router.get('/', pagesController.welcome);
 
 //new paths
-router.post('/login',                        usersController.userAuth);
-router.post("/users",                        usersController.userCreate);
+router.post('/login',    usersController.userAuth);
+router.post("/users",    usersController.userCreate);
 
+//items resource paths:
+router.get('items',      itemsController.itemsIndex);
 
 // users resource paths:
 router.get('/users',     usersController.index);

@@ -11,69 +11,39 @@
     var vm = this;
     vm.items = [];
 
-    vm.newFish = {
-      name: "",
-      category: ""
-    };
-
-    vm.editFish = {
-      name: "",
-      category: ""
+    vm.newItem = {
+      category: "";
+      manufacturer: "",
+      type: "",
+      color: "",
+      price: "",
+      picture: "",
+      phoneModel: ""
+    }
+    vm.editItem = {
+      category: "";
+      manufacturer: "",
+      type: "",
+      color: "",
+      price: "",
+      picture: "",
+      phoneModel: ""
     }
 
-    vm.getFishes     = getFishes;
+    vm.getItem     = getItem;
     vm.deleteFish    = deleteFish;
     vm.updateFish    = updateFish;
     vm.postFish      = postFish;
     vm.resetEditForm = resetEditForm;
 
-    vm.getFishes();
+    vm.getItem();
 
-    function getFishes() {
-      $http.get('/api/fishes').then(function(response) {
-        vm.fishes = response.data;
+    function getItem() {
+      $http.get('/api/items').then(function(response) {
+        vm.items = response.data;
       }, function(errRes) {
-        console.error('Error catchin fish!', errRes);
+        console.error('Error retrieving item!', errRes);
       });
-    }
-
-    function deleteFish(id) {
-      $http.delete('/api/fishes/' + id).then(function(response) {
-        console.log(response);
-      }, function(errRes) {
-        console.error('Error deletin fish!', errRes);
-      }).then(getFishes);
-    }
-
-    function postFish() {
-      $http.post('/api/fishes', vm.newFish)
-        .then(getFishes)
-        .then(function(response) {
-          vm.newFish = {
-            name: "",
-            category: ""
-          };
-        });
-    }
-
-    function updateFish(id) {
-      $http.put('/api/fishes/' + id, vm.editFish).then(function(response) {
-        vm.editFish = {
-          name: "",
-          category: ""
-        };
-      }, function(errRes) {
-        console.log('Error fixin fish!', errRes);
-      }).then(getFishes);
-    }
-
-    function resetEditForm() {
-      vm.fishCategory = '';
-      vm.fishName = '';
-      vm.editFish = {
-        name: "",
-        category: ""
-      };
     }
 
   }
