@@ -3,11 +3,11 @@
 
   angular
       .module("caseGalaxy")
-      .controller("Items", ItemsController);
+      .controller("ItemsController", ItemsController);
 
-  ItemsController.$inject = ['$state', 'authService', 'authToken', 'userDataService', '$log', "$uibModalInstance"];
+  ItemsController.$inject = ['$state', 'authService', 'authToken', 'userDataService', '$log', "$uibModalInstance", "$http"];
 
-  function ItemsController($state, authService, authToken, userDataService, $log, $uibModalInstance) {
+  function ItemsController($state, authService, authToken, userDataService, $log, $uibModalInstance, $http) {
     var vm = this;
     vm.items = [];
 
@@ -30,7 +30,7 @@
       phoneModel: ""
     }
 
-    vm.getItem     = getItem;
+    vm.getItem       = getItem;
     vm.deleteFish    = deleteFish;
     vm.updateFish    = updateFish;
     vm.postFish      = postFish;

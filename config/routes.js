@@ -4,6 +4,7 @@ var express = require('express'),
 // Require controllers.
 var pagesController = require('../controllers/pages');
 var usersController = require('../controllers/users');
+var itemsController = require('../controllers/items');
 
 // root path:
 router.get('/', pagesController.welcome);
@@ -13,7 +14,7 @@ router.post('/login',    usersController.userAuth);
 router.post("/users",    usersController.userCreate);
 
 //items resource paths:
-router.get('items',      itemsController.itemsIndex);
+router.get('/items',      itemsController.itemsIndex);
 
 // users resource paths:
 router.get('/users',     usersController.index);

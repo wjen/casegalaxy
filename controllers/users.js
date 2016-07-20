@@ -111,11 +111,10 @@ var userCreate = function(req, res) {
       // duplicate entry
       if (err.code == 11000)
         return res.json({ success: false, message: 'A user with that info already exists! '});
-      else if (user.name === null)
+      else if (!user.name)
         return res.json({ success: false, message: 'No name'});
       else
-        console.log(user.name);
-        return res.json({ success: false, message: 'No nameasdfasdf'});
+        return res.json(err);
     }
 
     var token = jwt.sign({
