@@ -4,9 +4,9 @@
   angular.module("caseGalaxy")
     .controller("MainController", MainController);
 
-  MainController.$inject = ["$state", "userDataService", "$log", "authService"];
+  MainController.$inject = ["$state", "userDataService", "$log", "authService", "$uibModal"];
 
-  function MainController($state, userDataService, $log, authService) {
+  function MainController($state, userDataService, $log, authService, $uibModal) {
     var vm = this;
     vm.userService = userDataService;
     vm.logout      = authService.logout;
@@ -14,6 +14,12 @@
 
     vm.$state = $state;
 
+    //collapse feature from ang-ui bootstrap
+    function CollapseController() {
+      vm.isCollapsed = false;
+    };
+
 
   };
+
 })();

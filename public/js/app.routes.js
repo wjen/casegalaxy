@@ -11,7 +11,7 @@
       .state("homePage", {
         url: "/",
         templateUrl: "/templates/home.html",
-        controller: "LoginController",
+        controller: "CarouselController",
         controllerAs: "vm"
       })
       .state("aboutPage", {
@@ -23,13 +23,13 @@
         templateUrl: "/templates/signup.html",
         controller: "UsersController",
         controllerAs: "vm"
+      })
+      .state("loginPage", {
+        url: "/login",
+        templateUrl: "/templates/login.html",
+        controller: "LoginController",
+        controllerAs: "vm"
       });
-      // .state("triumphs", {
-      //   url: "/triumphs",
-      //   templateUrl: "/templates/triumphs.html",
-      //   controller: "TriumphsController",
-      //   controllerAs: "vm"
-      // });
 
     $urlRouterProvider.otherwise("/");
   }

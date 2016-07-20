@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  angular.module('caseGalaxy', ["ui.router"])
+  angular.module('caseGalaxy', ["ui.router", "ui.bootstrap"])
     .config(function($httpProvider) {
 
       // attach our auth interceptor to the http requests

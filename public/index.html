@@ -11,12 +11,16 @@
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <script src="https://code.angularjs.org/1.5.7/angular-animate.min.js"></script>
+  <script src="https://code.angularjs.org/1.5.7/angular-touch.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
 
 </head>
 <body ng-controller="MainController as vm" ng-cloak>
-<nav class="navbar navbar-default navbar-fixed-top">
+
+<!-- navigation header -->
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -26,7 +30,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" sref="homePage">
+      <a class="navbar-brand" ui-sref="homePage">
         <img id="homeLogo" src="/images/pcgf2.png">
       </a>
     </div>
@@ -34,18 +38,16 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link2</a></li>
+        <li ui-sref-active="active"><a ui-sref="aboutPage">About<span class="sr-only">(current)</span></a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
+            <li><a href="#">Screen Protectors</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
+            <li><a href="#">Chargers</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
+            <li><a href="#">Phone Cases</a></li>
+
           </ul>
         </li>
       </ul>
@@ -56,8 +58,9 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
+        <li ui-sref-active="active" ng-hide="vm.isLoggedIn()"><a ui-sref="signUpPage">Sign Up</a>
+        <li ui-sref-active="active" ng-hide="vm.isLoggedIn()"><a ui-sref="loginPage">Login</a></li>
+        <li ui-sref-active="active" ng-show="vm.isLoggedIn()" class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
@@ -72,24 +75,26 @@
   </div><!-- /.container-fluid -->
 </nav>
 
+
 <div class="container">
-    <ul class="nav nav-tabs">
-      <li role="presentation" ui-sref-active="active">
-        <a ui-sref="homePage">Home</a>
-      </li>
-      <li role="presentation" ui-sref-active="active">
-        <a ui-sref="aboutPage">About</a>
-      </li>
-      <li role="presentation" ui-sref-active="active" ng-hide="vm.isLoggedIn()">
-        <a ui-sref="signUpPage">Sign Up</a>
-      </li>
-     <!--  <li role="presentation" ui-sref-active="active" ng-show="vm.isLoggedIn()">
-        <a ui-sref="triumphs">Triumphs</a>
-      --> </li>
-      <li ng-show="vm.isLoggedIn()">
-        <a class="btn" ng-click="vm.logout()">Logout {{ vm.userService.user.name }}</a>
-      </li>
-    </ul>
+  <ul class="nav nav-tabs">
+    <li role="presentation" ui-sref-active="active">
+      <a ui-sref="homePage">Home</a>
+    </li>
+    <li role="presentation" ui-sref-active="active">
+      <a ui-sref="aboutPage">About</a>
+    </li>
+    <li role="presentation" ui-sref-active="active" ng-hide="vm.isLoggedIn()">
+      <a ui-sref="signUpPage">Sign Up</a>
+    </li>
+    <li role="presentation" ui-sref-active="active" ng-hide="vm.isLoggedIn()">
+      <a ui-sref="loginPage">Login</a>
+    </li>
+    <li ng-show="vm.isLoggedIn()">
+      <a class="btn" ng-click="vm.logout()">Logout {{ vm.userService.user.name }}</a>
+    </li>
+  </ul>
+</div>
 
     <main ui-view>
       <!-- PAGE TEMPLATES INSERT HERE -->
@@ -103,7 +108,6 @@
     </ul>
   </footer>
 
-  </div>
 
 
   <!-- Angular scripts -->
@@ -114,6 +118,6 @@
   <script src="/controllers/main_controller.js"></script>
   <script src="/controllers/login_controller.js"></script>
   <script src="/controllers/users_controller.js"></script>
-  <!-- <script src="/controllers/triumphs_controller.js"></script> -->
+  <script src="/controllers/carousel_controller.js"></script>
 </body>
 </html>
