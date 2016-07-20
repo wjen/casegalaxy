@@ -40,6 +40,15 @@ a { color: #00B7FF; }
   float: left;
 }
 
+.form-cols {
+  margin-right: -90px;
+  margin-left: -90px;
+}
+.submit-buttons {
+  margin-bottom: 22px;
+  margin-top: 18px;
+}
+
 .example{
     background: url('../images/ingredients_bg_1.jpg') no-repeat center center fixed;
     /*background: url('../images/ingredients_bg_2.jpg') no-repeat center center fixed;*/

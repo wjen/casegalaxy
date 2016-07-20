@@ -13,11 +13,19 @@
     vm.isLoggedIn  = authService.isLoggedIn;
 
     vm.$state = $state;
-
-    vm.open = function () {
+    //uibModal is injected and called as a ui bootstrap method
+    vm.open = function() {
      var modalInstance = $uibModal.open({
-         templateUrl: 'templates/modalSignup.html',
-         controller: 'ModalCtrl as vm'
+         animation: true,
+         templateUrl: 'templates/login.html',
+         controller: 'LoginController as vm'
+     });
+    };
+    vm.openSignUp = function() {
+     var modalInstance = $uibModal.open({
+         animation: true,
+         templateUrl: 'templates/signup.html',
+         controller: 'UsersController as vm'
      });
     };
 

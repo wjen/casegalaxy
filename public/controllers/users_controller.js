@@ -3,9 +3,9 @@
   angular.module("caseGalaxy")
          .controller('UsersController', UsersController);
 
-  UsersController.$inject = ['$state', 'authService', 'authToken', 'userDataService', '$log'];
+  UsersController.$inject = ['$state', 'authService', 'authToken', 'userDataService', '$log', "$uibModalInstance"];
 
-  function UsersController($state, authService, authToken, userDataService, $log) {
+  function UsersController($state, authService, authToken, userDataService, $log, $uibModalInstance) {
     var vm = this;
 
     vm.currentUser = userDataService.user;
@@ -25,6 +25,7 @@
           vm.userData = data.user;
           vm.message = data.message;
           console.log(vm.message);
+          $uibModalInstance.close();
         });
 
         $state.go('homePage');
