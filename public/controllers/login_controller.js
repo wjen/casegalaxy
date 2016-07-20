@@ -14,6 +14,8 @@
     vm.isLoggedIn = authService.isLoggedIn;
     vm.currentUser = userDataService.user;
 
+
+
     // Form data for login
     vm.loginData;
 

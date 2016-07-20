@@ -14,6 +14,13 @@
 
     vm.$state = $state;
 
+    vm.open = function () {
+     var modalInstance = $uibModal.open({
+         templateUrl: 'templates/modalSignup.html',
+         controller: 'ModalCtrl as vm'
+     });
+    };
+
     //collapse feature from ang-ui bootstrap
     function CollapseController() {
       vm.isCollapsed = false;
