@@ -10,7 +10,9 @@ var itemSchema = new Schema({
   manufacturer: { type: String },
   type:         { type: String },
   color:        { type: String },
-  price:        { type: Number }
+  price:        { type: Number },
+  picture:      { type: String },
+  phoneModel:   { type: String }
 });
 
 //Create the model using schema.
