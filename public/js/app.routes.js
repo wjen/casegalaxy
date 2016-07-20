@@ -18,16 +18,24 @@
         url: "/about",
         templateUrl:  "/templates/about.html"
       })
-      .state("signUpPage", {
-        url: "/signup",
-        templateUrl: "/templates/signup.html",
-        controller: "UsersController",
-        controllerAs: "vm"
-      })
-      .state("loginPage", {
-        url: "/login",
-        templateUrl: "/templates/login.html",
-        controller: "LoginController",
+      //used modal instead
+      // .state("signUpPage", {
+      //   url: "/signup",
+      //   templateUrl: "/templates/signup.html",
+      //   controller: "UsersController",
+      //   controllerAs: "vm"
+      // })
+      //used modal instead
+      // .state("loginPage", {
+      //   url: "/login",
+      //   templateUrl: "/templates/login.html",
+      //   controller: "LoginController",
+      //   controllerAs: "vm"
+      // })
+      .state("itemsPage", {
+        url: "/items",
+        templateUrl: "/templates/items.html",
+        controller: "ItemsController",
         controllerAs: "vm"
       });
 

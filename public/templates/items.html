@@ -1,0 +1,24 @@
+  <ul id="items">
+    <li ng-repeat="item in vm.items" class="item-li">
+      <br>
+      <strong>{{item.category}}</strong> - <em>{{item.price}}</em>
+      <button class="btn btn-danger btn-xs" ng-click="">X</button>
+      <button class="btn btn-warning btn-xs" ng-click="">Edit</button>
+
+<!--       <form class="form-inline" ng-show="showme" id="edit-form">
+        <br>
+        <div class="form-group">
+          <input type="text" name='fishName' id="fish-name" placeholder="{{fish.name}}" class="form-control" ng-model="vm.editFish.name" />
+        </div>
+        <select class="form-control" name="fishCategory" id="fish-category" ng-model="vm.editFish.category">
+            <option value="Fish">Fish</option>
+            <option value="Clothing">Clothing</option>
+            <option value="Corpse">Corpse</option>
+            <option value="Trash">Trash</option>
+        </select>
+        <button class="btn btn-success btn-xs" ng-click="vm.updateFish(fish._id)">Save</button>
+        <button class="btn btn-default btn-xs" ng-click="showme=false; vm.resetEditForm();">Cancel</button>
+
+      </form>
+ -->    </li>
+  </ul>
