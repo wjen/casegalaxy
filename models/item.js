@@ -6,7 +6,9 @@ var mongoose     = require('mongoose'),
 
 //create items for sale schema
 var itemSchema = new Schema({
-  category:     { type: mongoose.Schema.Types.String, ref:'Category' },
+  category:     { type: String, required: true,
+                  enum: ["Phone Cases", "Screen Protectors", "Car Chargers"]
+                },
   manufacturer: { type: String },
   type:         { type: String },
   color:        { type: String },

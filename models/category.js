@@ -7,7 +7,7 @@ var mongoose     = require('mongoose'),
 var categorySchema = new Schema({
   category:     { type: String, required: true,
                   enum: ["Phone Cases", "Screen Protectors", "Car Chargers"]
-  },
+  }
 });
 
 
