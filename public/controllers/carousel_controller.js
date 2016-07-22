@@ -18,7 +18,7 @@
         text: "Dual-Layer Protection",
       },
       {
-        image: "//store.imore.com/images/product_images/accessories/additional_images/18500/large/1.jpg",
+        image: "http://store.imore.com/images/product_images/accessories/additional_images/18500/large/1.jpg",
         title: "TPU BUMPER CASES",
         text: "Protection With Style",
       },
