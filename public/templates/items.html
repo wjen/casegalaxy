@@ -1,34 +1,71 @@
-  <ul id="items">
-    <li ng-repeat="item in vm.items" class="item-li">
-      <br>
-      <strong>{{item.category}}</strong> - <em>{{item.price}}</em>
-      <button class="btn btn-danger btn-xs" ng-click="">X</button>
-      <button class="btn btn-warning btn-xs" ng-click="">Edit</button>
-
-
-
-
-
-
-
-
-
-
-
-<!--       <form class="form-inline" ng-show="showme" id="edit-form">
-        <br>
-        <div class="form-group">
-          <input type="text" name='fishName' id="fish-name" placeholder="{{fish.name}}" class="form-control" ng-model="vm.editFish.name" />
-        </div>
-        <select class="form-control" name="fishCategory" id="fish-category" ng-model="vm.editFish.category">
-            <option value="Fish">Fish</option>
-            <option value="Clothing">Clothing</option>
-            <option value="Corpse">Corpse</option>
-            <option value="Trash">Trash</option>
-        </select>
-        <button class="btn btn-success btn-xs" ng-click="vm.updateFish(fish._id)">Save</button>
-        <button class="btn btn-default btn-xs" ng-click="showme=false; vm.resetEditForm();">Cancel</button>
-
+<div class="container first">
+    <div class="row">
+      <div class="col-md-2 items-left-container">
+      <form>
+        <fieldset class="form-group">
+          <label for="repeatColor">Color</label>
+          <!-- ng-model on vm.colorselect takes the value of the option -->
+          <select class="form-control" id="repeatColor" ng-model="vm.colorSelect">
+            <option value="" selected disabled>Select color</option>
+            <option ng-repeat="item in vm.items" value="{{item.color}}">{{item.color}}</option>
+          </select>
+        </fieldset>
+        <fieldset class="form-group">
+          <label class="form-group" for="repeatManu">Manufacturer</label>
+          <select class="form-control" id="repeatManu" ng-model="vm.manuSelect">
+            <option value="" selected disabled>Select manufacturer--</option>
+            <option ng-repeat="item in vm.items" value="{{item.manufacturer}}">{{item.manufacturer}}</option>
+          </select>
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="repeatType">Type</label>
+          <select class="form-control" id="repeatType" ng-model="vm.typeSelect">
+            <option value="" selected disabled>Select Type</option>
+            <option ng-repeat="item in vm.items" value="{{item.type}}">{{item.type}}</option>
+          </select>
+        </fieldset>
+        <!-- use of ng options  -->
+        <fieldset class="form-group">
+          <label for="repeatPhoneModel">Phone Model</label>
+          <select class="form-control nullable" id="repeatPhoneModel" ng-options="item.phoneModel for item in vm.items" ng-model="vm.itemSelect">
+            <option value="vm.itemSelect.value" selected disabled>Select color</option>
+          </select>
+        </fieldset>
       </form>
- -->    </li>
-  </ul>
+
+
+
+        <div class="sidebar">
+          SideBar
+          {{vm.colorSelect}}
+        </div>
+      </div>
+      <div class="col-md-10" id="items-right-container">
+        <ul class="items-container">
+          <li class="item item-boxes" ng-repeat="item in vm.items">
+            <ul id="items">
+              <div>
+                <li class="item item-photos-li ">
+                  <a><img id="item-list-photos" ng-src="{{item.picture}}"></a>
+                </li>
+                <li class="item item-model">
+                  <strong>{{item.phoneModel}}</strong>
+                </li>
+                <li class="item item-price">
+                  <em>{{item.price}}</em>
+                </li>
+                <li class="item item-manufacturer">
+                  {{item.manufacturer}}
+                </li>
+                <li class="item buttons-li">
+                  <button class="btn btn-danger btn-xs" ng-click="">X</button>
+                  <button class="btn btn-warning btn-xs" ng-click="">Edit</button>
+                </li>
+              </div>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+</div>

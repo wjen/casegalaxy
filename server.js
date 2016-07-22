@@ -2,9 +2,14 @@ var express      = require('express');
 var path         = require('path');
 var favicon      = require('serve-favicon');
 var logger       = require('morgan');
+var paypal       = require('paypal-rest-sdk');
+var uuid         = require('node-uuid');
 var bodyParser   = require('body-parser');
+require('dotenv').config();
 var debug        = require('debug')('app:http');
 var cookieParser = require('cookie-parser');
+var request      = require('request');
+
 
 // Load local libraries.
 var env      = require('./config/environment'),

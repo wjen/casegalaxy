@@ -1,43 +1,42 @@
-<div id="about-tabs" class="container">
-  <ul class="nav nav-tabs">
-    <li role="presentation" ui-sref-active="active">
-      <a ui-sref="homePage">Home</a>
-    </li>
-    <li role="presentation" ui-sref-active="active">
-      <a ui-sref="aboutPage">About</a>
-    </li>
-    <li role="presentation" ui-sref-active="active" ng-hide="vm.isLoggedIn()">
-      <a ui-sref="signUpPage">Sign Up</a>
-    </li>
-    <li role="presentation" ui-sref-active="active" ng-hide="vm.isLoggedIn()">
-      <a ui-sref="loginPage">Login</a>
-    </li>
-    <li ng-show="vm.isLoggedIn()">
-      <a class="btn" ng-click="vm.logout()">Logout {{ vm.userService.user.name }}</a>
-    </li>
-  </ul>
-</div>
+<div class="about-body">
+  <div id="about-tabs" class="container">
+    <ul class="nav nav-tabs">
+      <li role="presentation" ui-sref-active="active">
+        <a ui-sref="homePage">Home</a>
+      </li>
+      <li role="presentation" ui-sref-active="active">
+        <a ui-sref="aboutPage">About</a>
+      </li>
+      <li role="presentation" ui-sref-active="active" ng-hide="vm.isLoggedIn()">
+        <a ui-sref="signUpPage">Sign Up</a>
+      </li>
+      <li role="presentation" ui-sref-active="active" ng-hide="vm.isLoggedIn()">
+        <a ui-sref="loginPage">Login</a>
+      </li>
+      <li ng-show="vm.isLoggedIn()">
+        <a class="btn" ng-click="vm.logout()">Logout {{ vm.userService.user.name }}</a>
+      </li>
+    </ul>
+  </div>
 
-<div>
-  <br>
-  <h3 class="cen-jus">CaseGalaxy</h3>
-  <br>
-  <div class="row">
-    <div class="col-sm-3 side-nav-container">
-      <ul class="side-nav">
-        <li sref="">About Us</li>
-        <li sref="">Help Center</li>
-        <li sref="">Contact</li>
-      </ul>
-    </div>
-    <div class="col-sm-9">
-      <div>
-        We are your one stop provider of phone cases. We were founded in 2011.
-        Come visit us at our storefrom 4123 Willowdoor Dr. Ca, 91732
-        <img id="building" src="http://thailandhousebuilder.com/factory_warehouse_construction/modules/content/images/Factory_Warehouse_Construction_Thailand.jpg">
-
+  <div>
+    <br>
+    <h3 class="cen-jus">CaseGalaxy</h3>
+    <br>
+    <div class="row">
+      <div class="col-sm-3 side-nav-container">
+        <ul class="side-nav">
+          <li sref="">About Us</li>
+          <li sref="">Help Center</li>
+          <li sref="">Contact</li>
+        </ul>
+      </div>
+      <div class="col-sm-9">
+        <div>
+          We are your one stop provider of phone cases. We were founded in 2011.
+          Come visit us at our storefrom 4123 Willowdoor Dr. Ca, 91732
+        </div>
       </div>
     </div>
   </div>
-
 </div>

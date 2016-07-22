@@ -21,7 +21,7 @@
 <body ng-controller="MainController as vm" ng-cloak>
 
 <!-- navigation header -->
-<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+<nav class="navi navbar navbar-default navbar-fixed-top navbar-inverse">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -41,13 +41,13 @@
       <ul class="nav navbar-nav">
         <li ui-sref-active="active"><a ui-sref="aboutPage">About<span class="sr-only">(current)</span></a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products<span class="caret"></span></a>
+          <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Screen Protectors</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="#">Chargers</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">Phone Cases</a></li>
+            <li><a ui-sref-active="active" ui-sref="itemsPage">Phone Cases</a></li>
 
           </ul>
         </li>
@@ -77,25 +77,18 @@
 </nav>
 
 
-<div class="container">
-  <ul class="nav nav-tabs">
-    <li role="presentation" ui-sref-active="active">
-      <a ui-sref="homePage">Home</a>
-    </li>
-    <li role="presentation" ui-sref-active="active">
-      <a ui-sref="aboutPage">About</a>
-    </li>
-    <li role="presentation" ui-sref-active="active" ng-hide="vm.isLoggedIn()">
-      <a ui-sref="signUpPage">Sign Up</a>
-    </li>
-    <li role="presentation" ui-sref-active="active" ng-hide="vm.isLoggedIn()">
-      <a ui-sref="loginPage">Login</a>
-    </li>
-    <li ng-show="vm.isLoggedIn()">
-      <a class="btn" ng-click="vm.logout()">Logout {{ vm.userService.user.name }}</a>
-    </li>
-  </ul>
+<div id="carousel-div" class="col-lg-11 col-lg-offset-1">
+  <uib-carousel active="active" interval="vm.myInterval" no-wrap="vm.noWrapSlides">
+    <uib-slide ng-repeat="slide in vm.slides track by $index">
+      <img id="carousel-img" ng-src="{{slide.image}}">
+      <div class="carousel-caption ng-scope">
+        <h1>{{slide.title}}</h4>
+        <!-- <h3>--{{slide.text}}--</p> -->
+      </div>
+    </uib-slide>
+  </uib-carousel>
 </div>
+
 
   <main ui-view>
     <!-- PAGE TEMPLATES INSERT HERE -->
@@ -117,6 +110,7 @@
   <script src="/js/app.routes.js"></script>
   <script src="/services/auth.service.js"></script>
   <script src="/services/user.dataservice.js"></script>
+  <script src="/services/item.dataservice.js"></script>
   <script src="/controllers/main_controller.js"></script>
   <script src="/controllers/login_controller.js"></script>
   <script src="/controllers/users_controller.js"></script>
