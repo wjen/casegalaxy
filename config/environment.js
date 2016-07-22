@@ -2,7 +2,7 @@ var _ = require('lodash');
 
 var localEnvVars = {
   TITLE:      'casegalaxy',
-  SAFE_TITLE: 'safetitlecasegalaxy',
+  SAFE_TITLE: 'case-galaxy',
   superSecret: "mysupersecret"
 };
 

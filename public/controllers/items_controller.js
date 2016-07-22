@@ -31,7 +31,14 @@
     function getItems() {
       itemDataService.all().then(function(response) {
         vm.items = response.data;
-        // vm.uniqueMans = getUnique(vm.items, 'manufacturer');
+        vm.uniqueMans = getUnique(vm.items, 'manufacturer');
+        vm.uniqueColors = getUnique(vm.items, 'color').filter(function(color) {
+          return color !== 'undefined';
+        });
+        vm.uniqueType = getUnique(vm.items, 'type');
+        vm.uniquePhoneModels = getUnique(vm.items, "phoneModel");
+        vm.uniquePrices = getUnique(vm.items, "price");
+
         // vm.uniqueColor = getUnique(vm.items,"color");
         console.log(response.data);
       }, function(errRes) {
@@ -39,6 +46,13 @@
       });
     }
 
+    function deleteItem(id) {
+      itemDataService.delete(id).then(function(response) {
+        console.log(response);
+      }, function(errRes) {
+        console.error('Error deleting Item!', errRes);
+      }).then(getItems);
+    }
 
   }
 

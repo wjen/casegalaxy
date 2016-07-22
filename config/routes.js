@@ -14,7 +14,8 @@ router.post('/login',    usersController.userAuth);
 router.post("/users",    usersController.userCreate);
 
 //items resource paths:
-router.get('/items',      itemsController.itemsIndex);
+router.get('/items',       itemsController.itemsIndex);
+router.delete('/items/:id',   itemsController.itemDelete);
 
 // users resource paths:
 router.get('/users',     usersController.index);
