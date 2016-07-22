@@ -37,6 +37,8 @@
       return $http.delete('/api/users/' + id);
     };
 
+
+
     // return our entire userFactory object
     return userFactory;
   }

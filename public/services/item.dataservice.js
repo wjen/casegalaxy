@@ -37,6 +37,8 @@
       return $http.delete('/api/items/' + id);
     };
 
+
+
     // return our entire itemFactory object
     return itemFactory;
   }

@@ -2,6 +2,8 @@
     <div class="row">
       <div class="col-md-2 items-left-container">
       <form>
+        <label>Search</label>
+        <input type="search" class="form-control form-group" ng-model="vm.search" placeholder="search...">
         <fieldset class="form-group">
           <label for="repeatColor">Color</label>
           <!-- ng-model on vm.colorselect takes the value of the option -->
@@ -13,8 +15,8 @@
         <fieldset class="form-group">
           <label class="form-group" for="repeatManu">Manufacturer</label>
           <select class="form-control" id="repeatManu" ng-model="vm.manuSelect">
-            <option value="" selected disabled>Select manufacturer--</option>
-            <option ng-repeat="item in vm.items" value="{{item.manufacturer}}">{{item.manufacturer}}</option>
+            <option value="" selected disabled>Select manufacturer</option>
+            <option ng-repeat="mans in vm.uniqueMans" value="{{vm.manuSelect}}">{{mans}}</option>
           </select>
         </fieldset>
         <fieldset class="form-group">
@@ -31,18 +33,19 @@
             <option value="vm.itemSelect.value" selected disabled>Select color</option>
           </select>
         </fieldset>
+        <fieldset class="form-group">
+          <label for="repeatItem">Price</label>
+          <select class="form-control nullable" id="repeatItem" ng-options="item.price for item in vm.items" ng-model="vm.priceSelect">
+            <option value="" selected disabled>Select price</option>
+          </select>
+        </fieldset>
+
       </form>
 
 
-
-        <div class="sidebar">
-          SideBar
-          {{vm.colorSelect}}
-        </div>
-      </div>
       <div class="col-md-10" id="items-right-container">
         <ul class="items-container">
-          <li class="item item-boxes" ng-repeat="item in vm.items">
+          <li class="item item-boxes" ng-repeat="item in vm.items | filter: vm.search | filter:{color: vm.colorSelect}">
             <ul id="items">
               <div>
                 <li class="item item-photos-li ">
