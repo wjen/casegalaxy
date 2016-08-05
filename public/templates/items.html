@@ -30,7 +30,7 @@
         <fieldset class="form-group">
           <label for="repeatPhoneModel">Phone Model</label>
           <select class="form-control nullable" id="repeatPhoneModel" ng-options="phoneModel for phoneModel in vm.uniquePhoneModels" ng-model="vm.phoneModelSelect">
-            <option value="" selected>Select color</option>
+            <option value="" >--Select Model--</option>
           </select>
         </fieldset>
         <fieldset class="form-group">
@@ -49,7 +49,7 @@
           <li class="item item-boxes" ng-repeat="item in vm.items | filter: vm.search | filter:{color: vm.colorSelect, manufacturer: vm.manuSelect, type: vm.typeSelect, phoneModel: vm.phoneModelSelect, price: vm.priceSelect}">
             <ul id="items">
               <div>
-                <li class="item item-photos-li ">
+                <li class="item item-photos-li">
                   <a><img id="item-list-photos" ng-src="{{item.picture}}"></a>
                 </li>
                 <li class="item item-model">

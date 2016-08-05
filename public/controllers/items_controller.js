@@ -16,7 +16,7 @@
     // vm.updateFish    = updateFish;
     // vm.postFish      = postFish;
     // vm.resetEditForm = resetEditForm;
-    vm.currentItem = itemDataService.item
+    vm.currentItem = itemDataService.item;
     vm.getItems();
 
 
@@ -28,9 +28,11 @@
       return Object.keys(obj).sort();
     };
 
+
     function getItems() {
       itemDataService.all().then(function(response) {
         vm.items = response.data;
+        // console.log(vm.items[0]);
         vm.uniqueMans = getUnique(vm.items, 'manufacturer');
         vm.uniqueColors = getUnique(vm.items, 'color').filter(function(color) {
           return color !== 'undefined';
@@ -38,8 +40,7 @@
         vm.uniqueType = getUnique(vm.items, 'type');
         vm.uniquePhoneModels = getUnique(vm.items, "phoneModel");
         vm.uniquePrices = getUnique(vm.items, "price");
-
-        // vm.uniqueColor = getUnique(vm.items,"color");
+        // vm.phoneModelSelect = vm.items[0].phoneModel;
         console.log(response.data);
       }, function(errRes) {
         console.error('Error retrieving item!', errRes);

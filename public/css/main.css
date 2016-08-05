@@ -1,3 +1,24 @@
+.main-nav li:hover {
+  background-color: #5DBCD2;
+}
+.dropdown-menu li a:hover {
+  background-color: #5DBCD2;
+}
+
+#practice-container {
+  position: relative;
+
+}
+#box {
+
+  background-color:red;
+  float: left;
+
+  top: 0;
+  bottom: 0;
+}
+#box.override { background-color: black; }
+
 *,
 html {
 
@@ -6,7 +27,7 @@ html {
 body {
   box-sizing: border-box;
   font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
-  padding: 80px 0px 0px 0px;
+  padding: 52px 0px 0px 0px;
   width: 100%;
   height: 100%;
   font-size: 14px;
@@ -22,6 +43,16 @@ a { color: #00B7FF; }
 .navbar-brand {
   padding: 0;
   margin-top: 2px;
+}
+.dropdown-menu {
+  padding: 0;
+}
+.dropdown-menu .divider {
+  margin: 0px;
+  height: 1px;
+}
+.dropdown-menu>li>a {
+  padding: 10px 20px;
 }
 .first{
   clear: both;
