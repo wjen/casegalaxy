@@ -1,19 +1,6 @@
 <div class="container first">
     <div class="row">
       <div class="col-md-2 items-left-container">
-      <div class="container">
-
-
-  <ul class="nav nav-tabs">
-    <li role="presentation" ui-sref-active="active">
-      <a ui-sref="homePage">Home</a>
-    </li>
-    <li role="presentation" ui-sref-active="active">
-      <a ui-sref="aboutPage">About</a>
-    </li>
-  </ul>
-
-</div>
       <form>
       <label>Search</label>
       <input type="search" class="form-control form-group" ng-model="vm.search" placeholder="search...">
@@ -53,22 +40,16 @@
           </select>
         </fieldset>
       </form>
-
-
-      <form id="new-fish" class="form-inline">
-        <div class="form-group">
-          <input type="text" name='fish[name]' id="fish-name" placeholder="Get Specific!" class="form-control" ng-model="vm.newFish.name" />
-        </div>
-        <select class="form-control" name="fish[category]" id="fish-category" ng-model="vm.newFish.category">
-            <option value="Fish">Fish</option>
-            <option value="Clothing">Clothing</option>
-            <option value="Corpse">Corpse</option>
-            <option value="Trash">Trash</option>
-        </select>
-        <button class="btn btn-success btn-sm submit-login-button" type="submit" ng-click="vm.postFish()">Save Mah' Catch!</button>
+      <form >
+        <fieldset class="add-item-form">
+          <legend>Add Item</legend>
+          First name:<br>
+          <input type="text" name="firstname" value="Mickey" class="form-control"><br>
+          Last name:<br>
+          <input type="text" name="lastname" value="Mouse"><br><br>
+          <input type="submit" value="Submit">
+        </fieldset>
       </form>
-
-
       </div>
       <div class="col-md-10" id="items-right-container">
         <ul class="items-container">

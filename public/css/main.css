@@ -137,6 +137,10 @@ div.carousel-caption h3 {
   margin-top: 15px;
 }
 
+.add-item-form {
+  border: 1px red solid;
+}
+
 /* items page right container*/
 
 .items-container {
