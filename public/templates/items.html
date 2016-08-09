@@ -2,6 +2,7 @@
     <div class="row items-main-container">
       <div class="col-md-2 items-left-container">
         <form class="item-form">
+        <label class="center-1">Filter By</label><br>
           <label>Search</label>
           <input type="search" class="form-control form-group" ng-model="vm.search" placeholder="search...">
           <fieldset class="form-group">
@@ -13,7 +14,7 @@
             </select>
           </fieldset>
           <fieldset class="form-group">
-            <label class="form-group" for="repeatManu">Manufacturer</label>
+            <label for="repeatManu">Manufacturer</label>
             <select class="form-control" id="repeatManu" ng-model="vm.manuSelect">
               <option value="" selected>Select manufacturer</option>
               <option ng-repeat="man in vm.uniqueMans" value="{{man}}">{{man}}</option>
@@ -45,9 +46,9 @@
 
         <div class="item-left-container-2">
         <form class="item-form text-primary">
-            <label class="center "> Add Item </label><br>
+          <label class="center-2">Add Item</label><br>
           <div class="form-group">
-            <label for="add-category"> Category </label>
+            <label for="add-category">Category </label>
             <select class="form-control" name="item[category]" id="add-category" ng-model="vm.newItem.category" required>
               <option value="" disabled selected>Select Category</option>
               <option value="Phone Cases" >Phone Cases</option>
