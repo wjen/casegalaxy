@@ -132,14 +132,34 @@ div.carousel-caption h3 {
   color: #000000;
 }
 
+/* items main container*/
+.items-main-container {
+    margin-right: 0px;
+    margin-left: -70px;
+}
+
 /* items page left container*/
 .items-left-container {
   margin-top: 15px;
+  border: 1px #eee solid;
+  border-style: inset;
+  padding: 0;
+}
+.item-form {
+  padding: 10px;
+}
+.item-left-container-2 {
+  padding: 0;
+  background-color: #eee;
 }
 
-.add-item-form {
-  border: 1px red solid;
+.center {
+  text-align: center;
+  margin-bottom: 0;
+  border-bottom: 1px solid #337ab7;
+  display: block;
 }
+
 
 /* items page right container*/
 
@@ -166,3 +186,6 @@ div.carousel-caption h3 {
     width: 200px;
     height: 340px;
 }
+
+
+
