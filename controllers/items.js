@@ -1,6 +1,5 @@
 // Require the model/s you're controlling
 var Item = require("../models/item");
-var Category = require("../models/item");
 
 
 //get all items

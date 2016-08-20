@@ -9,12 +9,12 @@ var itemSchema = new Schema({
   category:     { type: String, required: true,
                   enum: ["Phone Cases", "Screen Protectors", "Car Chargers"]
                 },
-  manufacturer: { type: String },
-  type:         { type: String },
-  color:        { type: String },
-  price:        { type: Number },
-  picture:      { type: String },
-  phoneModel:   { type: String }
+  manufacturer: { type: String, trim: true},
+  type:         { type: String, trim: true},
+  color:        { type: String, trim: true},
+  price:        { type: Number, trim: true},
+  picture:      { type: String, trim: true},
+  phoneModel:   { type: String, trim: true}
 });
 
 //Create the} model using schema.

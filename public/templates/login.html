@@ -3,19 +3,23 @@
   <h1>Case Galaxy</h3>
   <br>
   <form ng-submit="vm.login()" autocomplete="on">
-    <div class="row form-cols">
-      <label class="left-jus col-lg-offset-2" for="inputEmail">Email</label>
-      <div class="form-group col-lg-8 col-lg-offset-2">
-        <input type="text" id="inputEmail" class="form-control" placeholder="Your Email" ng-model="vm.loginData.email" required />
+    <div class="row ">
+      <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+        <label class="left-jus" for="inputEmail">Email</label>
+        <div class="form-group">
+          <input type="text" id="inputEmail" class="form-control" placeholder="Your Email" ng-model="vm.loginData.email" required />
+        </div>
       </div>
     </div>
-    <div class="row form-cols">
-      <label class="left-jus col-lg-offset-2" for="inputPword1">Password</label>
-      <div class="form-group col-lg-8 col-lg-offset-2">
-        <input type="password" id="inputPword1" class="form-control" placeholder="Your Password" ng-model="vm.loginData.password" required />
-      </div>
-      <div class="submit-buttons col-lg-8 col-lg-offset-2">
-        <button class="btn btn-primary form-control" type="submit">Login</button>
+    <div class="row ">
+      <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+        <label class="left-jus" for="inputPword1">Password</label>
+        <div class="form-group ">
+          <input type="password" id="inputPword1" class="form-control" placeholder="Your Password" ng-model="vm.loginData.password" required />
+        </div>
+        <div class="submit-buttons ">
+          <button class="btn btn-primary form-control" type="submit">Login</button>
+        </div>
       </div>
     </div>
   </form>

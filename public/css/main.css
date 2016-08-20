@@ -8,7 +8,6 @@
 
   background-color:red;
   float: left;
-
   top: 0;
   bottom: 0;
 }
@@ -55,7 +54,7 @@ a { color: #00B7FF; }
   margin: 0px;
   height: 1px;
 }
-.dropdown-menu>li>a {
+.dropdown-menu > li > a {
   padding: 10px 20px;
 }
 .first{
@@ -71,7 +70,6 @@ a { color: #00B7FF; }
   border-top: 1px solid gray;
   clear: both;
   margin: 30px 0px 0px 0px;
-
 }
 
 .cen-jus {
@@ -83,10 +81,7 @@ a { color: #00B7FF; }
   float: left;
 }
 
-.form-cols {
-  margin-right: -90px;
-  margin-left: -90px;
-}
+
 .submit-buttons {
   margin-bottom: 22px;
   margin-top: 18px;
@@ -144,8 +139,11 @@ div.carousel-caption h3 {
 /* items page left container*/
 .items-left-container {
   margin-top: 15px;
-  border: 1px #eee solid;
-  border-style: inset;
+/*  border: 1px #eee solid;
+  border-style: inset;*/
+  -moz-box-shadow:0 0 6px rgba(3,3,3,0.6);
+  -webkit-box-shadow:0 0 6px rgba(3,3,3,0.6);
+  box-shadow:0 0 6px rgba(3,3,3,0.6);
   padding: 0;
 }
 .item-form {
@@ -155,6 +153,9 @@ div.carousel-caption h3 {
   padding: 0;
   background-color: #eee;
 }
+.center {
+  text-align: center;
+}
 .center-1 {
   text-align: center;
   margin-bottom: 0;
@@ -162,6 +163,7 @@ div.carousel-caption h3 {
   display: block;
   text-transform: uppercase;
 }
+
 .center-2 {
   text-align: center;
   margin-bottom: 0;
@@ -180,7 +182,6 @@ div.carousel-caption h3 {
 }
 #items-right-container {
   width: 950px;
-  margin-left: -20px;
 
 }
 .item {
