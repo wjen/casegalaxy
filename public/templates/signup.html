@@ -4,25 +4,31 @@
   <h4>Sign Up Now</h4>
   <br>
   <form ng-submit="vm.createUser()" autocomplete="on">
-    <div class="row form-cols">
-      <label for="inputName" class="left-jus col-lg-offset-2">Name</label>
-      <div class="form-group col-lg-8 col-lg-offset-2">
-        <input type="text" id="inputName" class="form-control" placeholder="Full Name" ng-model="vm.userData.name" />
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-1 col-lg-8 col-lg-offset-2">
+        <label for="inputName" class="left-jus">Name</label>
+        <div class="form-group">
+          <input type="text" id="inputName" class="form-control" placeholder="Full Name" ng-model="vm.userData.name" />
+        </div>
       </div>
     </div>
-    <div class="row form-cols">
-      <label for="inputEmail" class="left-jus col-lg-offset-2">Email</label>
-      <div class="form-group col-lg-8 col-lg-offset-2">
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email" ng-model="vm.userData.email" required />
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+        <label for="inputEmail" class="left-jus">Email</label>
+        <div class="form-group">
+          <input type="email" id="inputEmail" class="form-control" placeholder="Email" ng-model="vm.userData.email" required />
+        </div>
       </div>
     </div>
-    <div class="row form-cols">
-      <label for="inputPword" class="left-jus col-lg-offset-2">Password</label>
-      <div class="form-group col-lg-8 col-lg-offset-2">
-        <input type="password" id="inputPword" class="form-control" placeholder="Password" ng-model="vm.userData.password" required />
-      </div>
-      <div class="submit-buttons col-lg-8 col-lg-offset-2">
-        <button class="btn btn-success form-control" type="submit">Submit</button>
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+        <label for="inputPword" class="left-jus">Password</label>
+        <div class="form-group">
+          <input type="password" id="inputPword" class="form-control" placeholder="Password" ng-model="vm.userData.password" required />
+        </div>
+        <div class="submit-buttons">
+          <button class="btn btn-success form-control" type="submit">Submit</button>
+        </div>
       </div>
     </div>
   </form>

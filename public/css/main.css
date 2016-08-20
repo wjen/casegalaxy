@@ -76,12 +76,13 @@ a { color: #00B7FF; }
   text-align: center;
 }
 
-
 .left-jus {
   float: left;
 }
 
-
+.right-jus {
+  float: right;
+}
 .submit-buttons {
   margin-bottom: 22px;
   margin-top: 18px;
