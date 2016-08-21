@@ -1,6 +1,6 @@
 <div class="container first">
     <div class="row items-main-container">
-      <div class="col-sm-3 col-md-2 items-left-container">
+      <div class="col-xs-12 col-sm-2 col-md-2 items-left-container">
         <form class="item-form">
         <label class="center-1">Filter By</label><br>
           <label>Search</label>
@@ -74,31 +74,31 @@
 
       </div>
 
-      <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2" id="items-right-container">
-        <ul class="items-container">
-          <li class="item item-boxes" ng-repeat="item in vm.items | filter: vm.search | filter:{color: vm.colorSelect, manufacturer: vm.manuSelect, type: vm.typeSelect, phoneModel: vm.phoneModelSelect, price: vm.priceSelect}">
-            <ul id="items">
-              <div>
-                <li class="item item-photos-li">
-                  <a><img id="item-list-photos" ng-src="{{item.picture}}"></a>
-                </li>
-                <li class="center item item-model">
+      <div class="col-xs-6 col-sm-5 col-md-3" id="" ng-repeat="item in vm.items | filter: vm.search | filter:{color: vm.colorSelect, manufacturer: vm.manuSelect, type: vm.typeSelect, phoneModel: vm.phoneModelSelect, price: vm.priceSelect}">
+        <div class="">
+          <ul id="">
+            <div>
+              <li class="item ">
+                <a><img class="item-list-photos center-block" ng-src="{{item.picture}}"></a>
+              </li>
+              <div class="item-info">
+                <li class="item center item-model">
                   {{item.phoneModel}}
                 </li>
-                <li class="center item item-manufacturer">
-                  {{item.manufacturer}}
+                <li class="item center">
+                  <small>{{item.manufacturer}}</small>
                 </li>
-                <li class="center item item-price">
+                <li class="item center item-price">
                   <strong>{{item.price}}</strong>
                 </li>
-                <li class="item buttons-li">
-                  <button class="btn btn-danger btn-xs" ng-click="vm.deleteItem(item._id)">X</button>
-                  <button class="btn btn-warning btn-xs" ng-click="">Edit</button>
-                </li>
               </div>
-            </ul>
-          </li>
-        </ul>
+              <li class="item center">
+                <button class="btn btn-danger btn-xs" ng-click="vm.deleteItem(item._id)">X</button>
+                <button class="btn btn-warning btn-xs" ng-click="">Edit</button>
+              </li>
+            </div>
+          </ul>
+        </div>
       </div>
     </div>
 
