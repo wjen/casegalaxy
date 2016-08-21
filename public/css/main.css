@@ -1,4 +1,15 @@
+.modal-title {
+  color: #5DBCD2;
+}
 
+.main-background {
+  background-color: #5DBCD2;
+}
+
+.btn-main {
+  background-color: #5DBCD2;
+  color: white;
+}
 
 #practice-container {
   position: relative;

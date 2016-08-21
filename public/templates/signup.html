@@ -1,36 +1,38 @@
 <div class="cen-jus">
-  <br>
-  <h3>Get The Newest Releases</h3>
-  <h4>Sign Up Now</h4>
-  <br>
-  <form ng-submit="vm.createUser()" autocomplete="on">
-    <div class="row">
-      <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-1 col-lg-8 col-lg-offset-2">
-        <label for="inputName" class="left-jus">Name</label>
-        <div class="form-group">
-          <input type="text" id="inputName" class="form-control" placeholder="Full Name" ng-model="vm.userData.name" />
+  <div class="modal-header navbar-inverse">
+    <h2 class="modal-title" id="modal-title">Sign Up</h2>
+  </div>
+  <div class="modal-body" id="modal-body">
+    <h4>Get the Lastest Releases First</h4>
+    <form ng-submit="vm.createUser()" id="signUpForm" autocomplete="on">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-1 col-lg-8 col-lg-offset-2">
+          <label for="inputName" class="left-jus">Name</label>
+          <div class="form-group">
+            <input type="text" id="inputName" class="form-control" placeholder="Full Name" ng-model="vm.userData.name" />
+          </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
-        <label for="inputEmail" class="left-jus">Email</label>
-        <div class="form-group">
-          <input type="email" id="inputEmail" class="form-control" placeholder="Email" ng-model="vm.userData.email" required />
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+          <label for="inputEmail" class="left-jus">Email</label>
+          <div class="form-group">
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email" ng-model="vm.userData.email" required />
+          </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
-        <label for="inputPword" class="left-jus">Password</label>
-        <div class="form-group">
-          <input type="password" id="inputPword" class="form-control" placeholder="Password" ng-model="vm.userData.password" required />
-        </div>
-        <div class="submit-buttons">
-          <button class="btn btn-success form-control" type="submit">Submit</button>
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+          <label for="inputPword" class="left-jus">Password</label>
+          <div class="form-group">
+            <input type="password" id="inputPword" class="form-control" placeholder="Password" ng-model="vm.userData.password" required />
+          </div>
         </div>
       </div>
-    </div>
-  </form>
-
+    </form>
+  </div>
+  <div class="modal-footer navbar-inverse">
+    <button class="btn btn-warning" ng-click="vm.close()">Close</button>
+    <button class="btn btn-main" form="signUpForm" type="submit">Submit</button>
+  </div>
 </div>

@@ -1,27 +1,29 @@
 <div class="cen-jus" ng-hide="vm.isLoggedIn()">
-  <br>
-  <h1>Case Galaxy</h3>
-  <br>
-  <form ng-submit="vm.login()" autocomplete="on">
-    <div class="row">
-      <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
-        <label class="left-jus" for="inputEmail">Email</label>
-        <div class="form-group">
-          <input type="text" id="inputEmail" class="form-control" placeholder="Your Email" ng-model="vm.loginData.email" required />
+  <div class="modal-header navbar-inverse">
+    <h2 class="modal-title" id="modal-title">Case Galaxy</h2>
+  </div><br/>
+   <div class="modal-body" id="modal-body">
+    <form action="vm.login()" autocomplete="on" id="loginform">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+          <label class="left-jus" for="inputEmail">Email</label>
+          <div class="form-group">
+            <input type="text" id="inputEmail" class="form-control" placeholder="Your Email" ng-model="vm.loginData.email" required />
+          </div>
         </div>
       </div>
-    </div>
-    <div class="row ">
-      <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
-        <label class="left-jus" for="inputPword1">Password</label>
-        <div class="form-group ">
-          <input type="password" id="inputPword1" class="form-control" placeholder="Your Password" ng-model="vm.loginData.password" required />
-        </div>
-        <div class="submit-buttons ">
-          <button class="btn btn-primary form-control" type="submit">Login</button>
+      <div class="row ">
+        <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+          <label class="left-jus" for="inputPword1">Password</label>
+          <div class="form-group ">
+            <input type="password" id="inputPword1" class="form-control" placeholder="Your Password" ng-model="vm.loginData.password" required />
+          </div>
         </div>
       </div>
-    </div>
-  </form>
-
+    </form>
+  </div>
+  <div class="modal-footer navbar-inverse">
+    <button class="btn btn-warning" ng-click="vm.close()">Close</button>
+    <button class="btn btn-main" form="loginform" type="submit">Login</button>
+  </div>
 </div>

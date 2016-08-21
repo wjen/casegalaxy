@@ -30,5 +30,9 @@
 
         $state.go('homePage');
     };
+
+    vm.close = function () {
+      $uibModalInstance.close();
+    };
   };
 })();
