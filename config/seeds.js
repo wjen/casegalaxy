@@ -103,7 +103,7 @@ Item.remove({}, function(error) {
         type:         "Hybrid",
         color:        "blue",
         price:        29.99,
-        picture:      "http://www.i-blason.com/media/catalog/product/cache/1/image/1200x1200/9df78eab33525d08d6e5fb8d27136e95/f/r/frost_blue-3_3_2/i-Blason-galaxy-s7-edge-unicorn-beetle-slim-case-32.jpg",
+        picture:      "https://cdn-img-1.wanelo.com/p/1ec/26c/874/50e0613d4c9f8bd410878e6/x354-q80.jpg",
         phoneModel:   "Samsung Galaxy S7",
       },
       {
