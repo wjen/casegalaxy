@@ -31,7 +31,7 @@ Item.remove({}, function(error) {
         type:         "Bumper TPU",
         color:        "red",
         price:        9.99,
-        picture:      "http://orzly.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/o/r/orzly-fusion-frame-case-for-iphone-6-red-_-clear_1.jpg",
+        picture:      "https://ak1.ostkcdn.com/images/products/7402354/BasAcc-Red-Bumper-TPU-Case-with-Aluminum-Button-for-Apple-iPhone-5-24ebda5a-2821-4bee-a919-2111ee5e32d8_600.jpg",
         phoneModel:   "Iphone 6",
       },
       {
@@ -40,7 +40,7 @@ Item.remove({}, function(error) {
         type:         "Bumper TPU",
         color:        "blue",
         price:        9.99,
-        picture:      "http://www.luvvitt.com/media/catalog/product/cache/1/image/650x/040ec09b1e35df139433887a97daa66f/i/p/iphone-6-case-clear-blue-1_2.jpg",
+        picture:      "https://www.luvvitt.com/media/catalog/product/cache/1/image/650x/040ec09b1e35df139433887a97daa66f/i/p/iphone-6-case-clear-blue-1_2.jpg",
         phoneModel:   "Iphone 6",
       },
       {
@@ -49,7 +49,7 @@ Item.remove({}, function(error) {
         type:         "Wallet Case",
         color:        "red",
         price:        9.99,
-        picture:      "http://cdn.igeeksblog.com/wp-content/uploads/Bear-Motion-Wallet-Case-for-iPhone-6-and-6-Plus.jpg",
+        picture:      "https://cdn.igeeksblog.com/wp-content/uploads/Bear-Motion-Wallet-Case-for-iPhone-6-and-6-Plus.jpg",
         phoneModel:   "Iphone 6",
       },
       {
@@ -58,7 +58,7 @@ Item.remove({}, function(error) {
         type:         "Wallet Case",
         color:        "blue",
         price:        9.99,
-        picture:      "http://product-images.highwire.com/11217085/extra-storage-blue-textured-lg-g4-wallet-phone-case-matching-wristlet-shop-trokm-1.jpg",
+        picture:      "https://rlv.zcache.com/relaxing_blue_beach_ocean_landscape_nature_scene_wallet_phone_case_for_iphone_6_6s-rd2f821bba6884b949a15bc240d99c831_zk7cs_630.jpg?rlvnet=1&view_padding=%5B285%2C0%2C285%2C0%5D",
         phoneModel:   "Iphone 6",
       },
       {
@@ -67,7 +67,7 @@ Item.remove({}, function(error) {
         type:         "Hybrid",
         color:        "blue",
         price:        9.99,
-        picture:      "http://shieldtail.com/eng_pl_SHTL-Hybrid-Case-for-Samsung-Galaxy-A5-Blue-40669_6.jpg",
+        picture:      "https://ss7.vzw.com/is/image/VerizonWireless/apple-case-mosaic-blue-wtl6scovmosblu-iset?$acc-lg$&fmt=jpeg",
         phoneModel:   "Samsung Galaxy Note 6",
       },
       {
@@ -76,7 +76,7 @@ Item.remove({}, function(error) {
         type:         "Hybrid",
         color:        "red",
         price:        9.99,
-        picture:      "http://cdn.ww0.org/i/itm/800/62/19066_01.jpg",
+        picture:      "https://scstylecaster.files.wordpress.com/2014/02/red-leather-case.jpg?w=1024&h=1024",
         phoneModel:   "Samsung Galaxy Note 6",
       },
       {
@@ -85,7 +85,7 @@ Item.remove({}, function(error) {
         type:         "Hybrid",
         color:        "red",
         price:        19.99,
-        picture:      "http://cdn.ww0.org/i/itm/800/62/19066_01.jpg",
+        picture:      "https://blog.incipio.com/wp-content/uploads/2011/07/Iphone-4-EDGE-Iridescent-Red-Hard-Shell-Slider-Case1.jpg",
         phoneModel:   "Samsung Galaxy Note 6",
       },
       {
@@ -94,7 +94,7 @@ Item.remove({}, function(error) {
         type:         "Hybrid",
         color:        "red",
         price:        19.99,
-        picture:      "http://www.sqwireless.com/image/cache/data/Phone_Case/H118-S6-RD-500x500.jpg",
+        picture:      "https://www.sqwireless.com/image/cache/data/Phone_Case/H118-S6-RD-500x500.jpg",
         phoneModel:   "Samsung Galaxy Note 6",
       },
       {
@@ -112,7 +112,7 @@ Item.remove({}, function(error) {
         type:         "Hybrid",
         color:        "red",
         price:        29.99,
-        picture:      "http://img.dxcdn.com/productimages/sku_428324_1.jpg",
+        picture:      "https://img.dxcdn.com/productimages/sku_428324_1.jpg",
         phoneModel:   "Samsung Galaxy S7",
       },
       {
@@ -121,7 +121,7 @@ Item.remove({}, function(error) {
         type:         "Hybrid",
         color:        "blue",
         price:        19.99,
-        picture:      "http://www.kikowireless.com/image/data/category/Armor%20Defender-%20Holster/Samsung/Galaxy%20S7/Shield/GS7-Hard-Shield-Blue.jpg",
+        picture:      "https://www.kikowireless.com/image/data/category/Armor%20Defender-%20Holster/Samsung/Galaxy%20S7/Shield/GS7-Hard-Shield-Blue.jpg",
         phoneModel:   "Samsung Galaxy Note 6",
       },
       {
@@ -129,7 +129,7 @@ Item.remove({}, function(error) {
         manufacturer: "CaseGalaxy",
         type:         "TemperGlass",
         price:        9.99,
-        picture:      "http://img.bbystatic.com/BestBuy_US/images/products/8302/8302024_rd.jpg",
+        picture:      "https://applenapps.com/wp-content/uploads/2011/08/10730425-iphone-4-screen-protector.jpg",
         phoneModel:   "Samsung Galaxy Note 6",
       },
       {
@@ -137,7 +137,7 @@ Item.remove({}, function(error) {
         manufacturer: "WDI-10",
         type:         "TemperGlass",
         price:        19.99,
-        picture:      "http://i.kinja-img.com/gawker-media/image/upload/kndb1rxfolx9z0kxb5hs.png",
+        picture:      "https://www.bestskinsever.com/media/catalog/product/cache/1/image/650x/040ec09b1e35df139433887a97daa66f/i/p/iphone-5-screen-protector_2.jpg",
         phoneModel:   "Samsung Galaxy S7",
       },
       {
@@ -145,7 +145,7 @@ Item.remove({}, function(error) {
         manufacturer: "WDI-10",
         type:         "Diamond",
         price:        9.99,
-        picture:      "http://cdn.shopify.com/s/files/1/0796/3401/products/cmi_Screen-protector_Glass_Samsung-Galaxy_S6_CM032408_8_1024x1024.png?v=1434571738",
+        picture:      "https://cdn.shopify.com/s/files/1/0796/3401/products/cmi_Screen-protector_Glass_Samsung-Galaxy_S6_CM032408_8_1024x1024.png?v=1434571738",
         phoneModel:   "Samsung Galaxy S7",
       },
       {
@@ -153,7 +153,7 @@ Item.remove({}, function(error) {
         manufacturer: "WDI-10",
         type:         "Dual-Port USB",
         price:        9.99,
-        picture:      "http://media.gadgetsin.com/2013/10/id_america_lx_dual_usb_car_charger_with_leather_grip_1.jpg",
+        picture:      "https://www.androidcentral.com/sites/androidcentral.com/files/styles/medium/public/article_images/2015/10/aukey-qc20-car-charger.jpg?itok=tBm7F_Wy",
         phoneModel:   "Samsung Galaxy",
       },
       {
@@ -161,7 +161,7 @@ Item.remove({}, function(error) {
         manufacturer: "WDI-10",
         type:         "USB",
         price:        9.99,
-        picture:      "http://cdn.cdnru1.com/templates/products/282/1.jpg",
+        picture:      "https://www.targus.com/content/images/thumbs/0018137_dual-usb-car-charger-for-media-tablets-mobile-phones.jpeg",
         phoneModel:   "Apple Iphone 5/6"
       }
       ];
