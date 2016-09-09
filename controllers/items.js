@@ -13,8 +13,6 @@ var itemsIndex = function(req, res, next) {
   });
 };
 
-
-
 //delete item
 var itemDelete = function(req, res) {
 
@@ -24,7 +22,6 @@ var itemDelete = function(req, res) {
     if (err) {
       res.json(err);
     }
-
     res.json({ message: 'Item removed' });
   });
 }
