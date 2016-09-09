@@ -10,6 +10,7 @@ var cookieParser = require('cookie-parser');
 var request      = require('request');
 
 //used for accesing database locally
+//disable for local env
 require('dotenv').config();
 
 // Load local libraries.
