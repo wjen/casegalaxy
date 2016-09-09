@@ -5,11 +5,12 @@ var logger       = require('morgan');
 var paypal       = require('paypal-rest-sdk');
 var uuid         = require('node-uuid');
 var bodyParser   = require('body-parser');
-require('dotenv').config();
 var debug        = require('debug')('app:http');
 var cookieParser = require('cookie-parser');
 var request      = require('request');
 
+//used for accesing database locally
+require('dotenv').config();
 
 // Load local libraries.
 var env      = require('./config/environment'),
