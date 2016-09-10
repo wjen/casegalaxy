@@ -2,81 +2,90 @@
     <div class="row items-main-container">
       <div class="col-xs-12 col-sm-2 col-md-2 items-left-container">
         <form class="item-form">
-        <label class="center-1">Filter By</label><br>
-          <label>Search</label>
-          <input type="search" class="form-control form-group" ng-model="vm.search" placeholder="search...">
-          <fieldset class="form-group">
-            <label for="repeatColor">Color</label>
-            <!-- ng-model on vm.colorselect takes the value of the option -->
-            <select class="form-control" id="repeatColor" ng-model="vm.colorSelect">
-              <option value="" selected>All</option>
-              <option ng-repeat="color in vm.uniqueColors" value="{{color}}">{{color}}</option>
-            </select>
-          </fieldset>
-          <fieldset class="form-group">
-            <label for="repeatManu">Manufacturer</label>
-            <select class="form-control" id="repeatManu" ng-model="vm.manuSelect">
-              <option value="" selected>Select manufacturer</option>
-              <option ng-repeat="man in vm.uniqueMans" value="{{man}}">{{man}}</option>
-            </select>
-          </fieldset>
-          <fieldset class="form-group">
-            <label for="repeatType">Type</label>
-            <select class="form-control" id="repeatType" ng-model="vm.typeSelect">
-              <option value="" selected>Select Type</option>
-              <option ng-repeat="type in vm.uniqueType" value="{{type}}">{{type}}</option>
-            </select>
-          </fieldset>
-          <!-- use of ng options  -->
-          <fieldset class="form-group">
-            <label for="repeatPhoneModel">Phone Model</label>
-            <select class="form-control nullable" id="repeatPhoneModel" ng-options="phoneModel for phoneModel in vm.uniquePhoneModels" ng-model="vm.phoneModelSelect">
-              <option value="" >Select Model</option>
-            </select>
-          </fieldset>
-          <fieldset class="form-group">
-            <label for="repeatItem">Price</label>
-            <select class="form-control nullable" id="repeatItem" ng-options="price for price in vm.uniquePrices" ng-model="vm.priceSelect">
-              <option value="" selected>Select price</option>
-            </select>
-          </fieldset>
+          <label class="center-1">Filter By</label><br>
+            <label>Search</label>
+            <input type="search" class="form-control form-group" ng-model="vm.search" placeholder="search...">
+            <fieldset class="form-group">
+              <label for="repeatColor">Color</label>
+              <!-- ng-model on vm.colorselect takes the value of the option -->
+              <select class="form-control" id="repeatColor" ng-model="vm.colorSelect">
+                <option value="" selected>All</option>
+                <option ng-repeat="color in vm.uniqueColors" value="{{color}}">{{color}}</option>
+              </select>
+            </fieldset>
+            <fieldset class="form-group">
+              <label for="repeatManu">Manufacturer</label>
+              <select class="form-control" id="repeatManu" ng-model="vm.manuSelect">
+                <option value="" selected>Select manufacturer</option>
+                <option ng-repeat="man in vm.uniqueMans" value="{{man}}">{{man}}</option>
+              </select>
+            </fieldset>
+            <fieldset class="form-group">
+              <label for="repeatType">Type</label>
+              <select class="form-control" id="repeatType" ng-model="vm.typeSelect">
+                <option value="" selected>Select Type</option>
+                <option ng-repeat="type in vm.uniqueType" value="{{type}}">{{type}}</option>
+              </select>
+            </fieldset>
+            <!-- use of ng options  -->
+            <fieldset class="form-group">
+              <label for="repeatPhoneModel">Phone Model</label>
+              <select class="form-control nullable" id="repeatPhoneModel" ng-options="phoneModel for phoneModel in vm.uniquePhoneModels" ng-model="vm.phoneModelSelect">
+                <option value="" >Select Model</option>
+              </select>
+            </fieldset>
+            <fieldset class="form-group">
+              <label for="repeatItem">Price</label>
+              <select class="form-control nullable" id="repeatItem" ng-options="price for price in vm.uniquePrices" ng-model="vm.priceSelect">
+                <option value="" selected>Select price</option>
+              </select>
+            </fieldset>
         </form>
 
+        <!-- Add item form -->
         <div class="item-left-container-2">
-        <form class="item-form text-primary" id="new-item">
-          <label class="center-2">Add Item</label><br>
-          <div class="form-group">
-            <label for="add-category">Category</label>
-            <select class="form-control" name="item[category]" id="add-category" ng-model="vm.newItem.category" required>
-              <option value="" disabled selected>Select Category</option>
-              <option value="Phone Cases" >Phone Cases</option>
-              <option value="Screen Protectors" >Screen Protectors</option>
-              <option value="Car Chargers" >Car Chargers</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="add-manu">Manufacturer</label>
-            <input type="text" name="item[manufacturer]" class="form-control" id="add-manu" placeholder="Wdi, Casegalaxy ..." ng-model="vm.newItem.manufacturer">
-          </div>
-          <div class="form-group">
-            <label for="add-type">Type</label>
-            <input type="text" name="item[type]" class="form-control" id="add-type" placeholder="Bumper Tpu, Hybrid ..." ng-model="vm.newItem.type">
-          </div>
-          <div class="form-group">
-            <label for="add-color">Color</label>
-            <input type="text" name="item[color]" class="form-control" id="add-color" placeholder="Red, Green, Blue ..." ng-model="vm.newItem.color">
-          </div>
-          <div class="form-group">
-            <label for="add-price">Price</label>
-            <input type="text" name="item[price]" class="form-control" id="add-color" placeholder="ex. 9.99" ng-model="vm.newItem.price">
-          </div>
-          <div class="form-group">
-            <button type="submit" class="form-control btn-success">Submit</button>
-          </div>
-          <div class="form-group">
-            <input type="reset" value="Reset" class="form-control btn-primary">
-          </div>
-        </form>
+          <form class="item-form text-primary" id="new-item">
+            <label class="center-2">Add Item</label><br>
+            <div class="form-group">
+              <label for="add-category">Category</label>
+              <select class="form-control" name="item[category]" id="add-category" ng-model="vm.newItem.category" required>
+                <option value="" disabled selected>Select Category</option>
+                <option value="Phone Cases" >Phone Cases</option>
+                <option value="Screen Protectors" >Screen Protectors</option>
+                <option value="Car Chargers" >Car Chargers</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="add-model">Phone Model</label>
+              <input class="form-control" type="text" name="item[model]" id="add-model" placeholder="iphone, galaxy note" ng-model="vm.newItem.phoneModel">
+            </div>
+            <div class="form-group">
+              <label for="add-manu">Manufacturer</label>
+              <input class="form-control" type="text" name="item[manufacturer]" id="add-manu" placeholder="Wdi, Casegalaxy ..." ng-model="vm.newItem.manufacturer">
+            </div>
+            <div class="form-group">
+              <label for="add-type">Type</label>
+              <input class="form-control" id="add-type" type="text" name="item[type]" placeholder="Bumper Tpu, Hybrid ..." ng-model="vm.newItem.type">
+            </div>
+            <div class="form-group">
+              <label for="add-color">Color</label>
+              <input class="form-control" id="add-color" type="text" name="item[color]" placeholder="Red, Green, Blue ..." ng-model="vm.newItem.color">
+            </div>
+            <div class="form-group">
+              <label for="add-price">Price</label>
+              <input class="form-control" id="add-price" type="text" name="item[price]" placeholder="ex. 9.99" ng-model="vm.newItem.price">
+            </div>
+            <div class="form-group">
+              <label for="add-picture">Picture Url</label>
+              <input class="form-control" id="add-picture" type="text" name="item[picture]" placeholder="https://" ng-model="vm.newItem.picture">
+            </div>
+            <div class="form-group">
+              <button class="form-control btn-success" type="submit" ng-click="vm.postItem()">Submit</button>
+            </div>
+            <div class="form-group">
+              <input class="form-control btn-primary" type="reset" value="Reset" >
+            </div>
+          </form>
         </div>
 
 

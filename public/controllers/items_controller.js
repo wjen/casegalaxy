@@ -14,12 +14,22 @@
     vm.getItems      = getItems;
     vm.deleteItem    = deleteItem;
     // vm.updateFish    = updateFish;
-    // vm.postFish      = postFish;
+    vm.postItem     = postItem;
     // vm.resetEditForm = resetEditForm;
     vm.currentItem = itemDataService.item;
     vm.getItems();
 
+    vm.newItem = {
+      category: "",
+      phoneModel: "",
+      manufacturer: "",
+      type: "",
+      color: "",
+      price: "",
+      picture: "",
+    }
 
+    // Object.keys returns the unique keys of each item in array
     function getUnique(arr, field) {
       var obj = {};
       arr.forEach(function(e){
@@ -54,6 +64,23 @@
         console.error('Error deleting Item!', errRes);
       }).then(getItems);
     }
+
+    function postItem() {
+      $http.post('/api/items', vm.newItem)
+        .then(getItems)
+        .then(function(response) {
+          vm.newItem = {
+            category: "",
+            phoneModel: "",
+            manufacturer: "",
+            type: "",
+            color: "",
+            price: "",
+            picture: "",
+          };
+        });
+    }
+
 
   }
 

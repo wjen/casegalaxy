@@ -10,16 +10,17 @@ var itemsController = require('../controllers/items');
 router.get('/', pagesController.welcome);
 
 //new paths
-router.post('/login',    usersController.userAuth);
-router.post("/users",    usersController.userCreate);
+router.post('/login',         usersController.userAuth);
+router.post("/users",         usersController.userCreate);
 
 //items resource paths:
-router.get('/items',       itemsController.itemsIndex);
+router.get('/items',          itemsController.itemsIndex);
 router.delete('/items/:id',   itemsController.itemDelete);
+router.post('/items',         itemsController.itemCreate);
 
 // users resource paths:
-router.get('/users',     usersController.index);
-router.get('/users/:id', usersController.show);
+router.get('/users',           usersController.index);
+router.get('/users/:id',       usersController.show);
 
 
 
