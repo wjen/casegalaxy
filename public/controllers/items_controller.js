@@ -69,15 +69,7 @@
       $http.post('/api/items', vm.newItem)
         .then(getItems)
         .then(function(response) {
-          vm.newItem = {
-            category: "",
-            phoneModel: "",
-            manufacturer: "",
-            type: "",
-            color: "",
-            price: "",
-            picture: "",
-          };
+          vm.newItem.picture = "";
         });
     }
 
