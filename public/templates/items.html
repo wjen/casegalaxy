@@ -106,8 +106,12 @@
                 <strong>{{item.price | currency}}</strong>
               </li>
               <li class="item">
-                <button class="btn btn-danger btn-xs" ng-click="vm.deleteItem(item._id)">X</button>
-                <button class="btn btn-warning btn-xs" ng-click="editShow=true">Edit</button>
+                <a href="" class="item-links" ng-click="vm.deleteItem(item._id)">
+                  <i class="fa fa-trash-o fa-fw"></i>
+                </a>
+                <a href="" class="item-links" ng-click="editShow=true">
+                  <i class="fa fa-pencil-square-o fa-fw"></i>
+                </a>
               </li>
             </div>
             <div class="" ng-show="editShow">

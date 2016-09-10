@@ -201,5 +201,17 @@ div.carousel-caption h3 {
   height: 20px;
 }
 
+.item-links {
+  text-decoration: none;
+}
+
+a:link {
+ text-decoration: none;
+}
+
+.fa {
+color: gray;
+ }
+
 
 
