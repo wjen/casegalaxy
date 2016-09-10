@@ -44,7 +44,7 @@
 
         <!-- Add item form -->
         <div class="item-left-container-2">
-          <form class="item-form text-primary" id="new-item" name="vm.form">
+          <form class="item-form text-primary" id="new-item" name="vm.form" ng-submit="vm.postItem()">
             <label class="center-2">Add Item</label><br>
             <div class="form-group">
               <label for="add-category">Category</label>
@@ -77,10 +77,10 @@
             </div>
             <div class="form-group">
               <label for="add-picture">Picture Url</label>
-              <input class="form-control" id="add-picture" type="url" name="item[picture]" placeholder="https://" ng-model="vm.newItem.picture" >
+              <input class="form-control" id="add-picture" type="url" name="item[picture]" placeholder="https://" ng-model="vm.newItem.picture" required>
             </div>
             <div class="form-group">
-              <button class="form-control btn-success" type="submit" ng-click="vm.postItem()">Submit</button>
+              <button class="form-control btn-success" type="submit"">Submit</button>
             </div>
             <div class="form-group">
               <input class="form-control btn-primary" type="reset" value="Reset" >
@@ -103,7 +103,11 @@
                 <small>{{item.manufacturer}}</small>
               </li>
               <li class="item item-price">
-                <strong>{{item.price}}</strong>
+                <strong>{{item.price | currency}}</strong>
+              </li>
+              <li class="item">
+                <button class="btn btn-danger btn-xs" ng-click="vm.deleteItem(item._id)">X</button>
+                <button class="btn btn-warning btn-xs" ng-click="editShow=true">Edit</button>
               </li>
             </div>
             <div class="" ng-show="editShow">
@@ -112,19 +116,19 @@
                   <a><img class="item-list-photos" ng-src="{{item.picture}}"></a>
                 </li>
                 <li class="item item-model">
-                  <input class="edit-box" type="text" name="itemName" placeholder="{{item.phoneModel}}" ng-model="vm.editItemModel" />
+                  <input class="edit-box" type="text" name="itemName" placeholder="{{item.phoneModel}}" ng-model="vm.editItem.model" />
                 </li>
                 <li class="item">
-                  <input class="edit-box" type="text" name="itemManu" placeholder="{{item.manufacturer}}" ng-model="vm.editItemManu" />
+                  <input class="edit-box" type="text" name="itemManu" placeholder="{{item.manufacturer}}" ng-model="vm.editItem.manufacturer" />
                 </li>
                 <li class="item item-price">
-                  <input class="edit-box" type="text" name="itemPrice" placeholder="{{item.price}}" ng-model="vm.editItemPrice" />
+                  <input class="edit-box" type="number" name="itemPrice" placeholder="{{item.price | currency}}" ng-model="vm.editItem.price" />
+                </li>
+                <li class="item">
+                  <button class="btn btn-success btn-xs" ng-click="vm.updateItem(item._id)">Save</button>
+                  <button class="btn btn-warning btn-xs" ng-click="editShow=false; vm.resetEditForm()">Cancel</button>
                 </li>
             </div>
-            <li class="item">
-              <button class="btn btn-danger btn-xs" ng-click="vm.deleteItem(item._id)">X</button>
-              <button class="btn btn-warning btn-xs" ng-click="editShow=true">Edit</button>
-            </li>
           </ul>
       </div>
     </div>

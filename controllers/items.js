@@ -48,9 +48,36 @@ var itemCreate = function(req, res) {
   });
 }
 
+//update item
+var itemUpdate = function(req, res) {
+  var id = req.params.id;
+
+  Item.findById(id, function(err, item) {
+    if(err) {
+      res.send(err);
+    }
+    //set the new item info if it exists in the request
+    if(req.body.model) item.phoneModel = req.body.model;
+    if(req.body.manufacturer) item.manufacturer = req.body.manufacturer;
+    if(req.body.price) item.price = req.body.price;
+
+    //save the item
+    item.save(function(err, updatedItem) {
+      if(err) {
+        res.send(err);
+      }
+      //log message for update
+      console.log("Updated fish");
+      //return the item
+      res.json(updatedItem);
+    });
+  });
+}
+
 // Export the function/s as JSON
 module.exports = {
   itemDelete:  itemDelete,
   itemsIndex:  itemsIndex,
-  itemCreate: itemCreate,
+  itemCreate:  itemCreate,
+  itemUpdate:  itemUpdate,
 }

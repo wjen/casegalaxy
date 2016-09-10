@@ -13,7 +13,7 @@
 
     vm.getItems      = getItems;
     vm.deleteItem    = deleteItem;
-    // vm.updateFish    = updateFish;
+    vm.updateItem   = updateItem;
     vm.postItem     = postItem;
     // vm.resetEditForm = resetEditForm;
     vm.currentItem = itemDataService.item;
@@ -71,6 +71,19 @@
         .then(function(response) {
           vm.newItem.picture = "";
         });
+    }
+
+    function updateItem(id) {
+      $http.put('/api/items/' + id, vm.editItem)
+        .then(function(response) {
+          vm.editItem = {
+            model: "",
+            manufacturer: "",
+            price: ""
+          };
+        }, function(errRes) {
+          console.log("Error updating Item", errRes);
+        }).then(getItems);
     }
 
 
