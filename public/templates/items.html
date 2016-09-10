@@ -90,31 +90,42 @@
       </div>
 
    <!-- items container -->
-      <div class="col-xs-6 col-sm-5 col-md-3" id="" ng-repeat="item in vm.items | filter: vm.search | filter:{color: vm.colorSelect, manufacturer: vm.manuSelect, type: vm.typeSelect, phoneModel: vm.phoneModelSelect, price: vm.priceSelect}">
-        <div class="">
+      <div class="col-xs-6 col-sm-5 col-md-3 center" id="" ng-repeat="item in vm.items | filter: vm.search | filter:{color: vm.colorSelect, manufacturer: vm.manuSelect, type: vm.typeSelect, phoneModel: vm.phoneModelSelect, price: vm.priceSelect}">
           <ul id="">
-            <div>
-              <li class="item ">
-                <a><img class="item-list-photos center-block" ng-src="{{item.picture}}"></a>
+            <div class="" ng-hide="editShow">
+              <li class="item">
+                <a><img class="item-list-photos" ng-src="{{item.picture}}"></a>
               </li>
-              <div class="item-info">
-                <li class="item center item-model">
-                  {{item.phoneModel}}
-                </li>
-                <li class="item center">
-                  <small>{{item.manufacturer}}</small>
-                </li>
-                <li class="item center item-price">
-                  <strong>{{item.price}}</strong>
-                </li>
-              </div>
-              <li class="item center">
-                <button class="btn btn-danger btn-xs" ng-click="vm.deleteItem(item._id)">X</button>
-                <button class="btn btn-warning btn-xs" ng-click="">Edit</button>
+              <li class="item item-model">
+                {{item.phoneModel}}
+              </li>
+              <li class="item">
+                <small>{{item.manufacturer}}</small>
+              </li>
+              <li class="item item-price">
+                <strong>{{item.price}}</strong>
               </li>
             </div>
+            <div class="" ng-show="editShow">
+              <form id="edit-form"></form>
+                <li class="item">
+                  <a><img class="item-list-photos" ng-src="{{item.picture}}"></a>
+                </li>
+                <li class="item item-model">
+                  <input class="edit-box" type="text" name="itemName" placeholder="{{item.phoneModel}}" ng-model="vm.editItemModel" />
+                </li>
+                <li class="item">
+                  <input class="edit-box" type="text" name="itemManu" placeholder="{{item.manufacturer}}" ng-model="vm.editItemManu" />
+                </li>
+                <li class="item item-price">
+                  <input class="edit-box" type="text" name="itemPrice" placeholder="{{item.price}}" ng-model="vm.editItemPrice" />
+                </li>
+            </div>
+            <li class="item">
+              <button class="btn btn-danger btn-xs" ng-click="vm.deleteItem(item._id)">X</button>
+              <button class="btn btn-warning btn-xs" ng-click="editShow=true">Edit</button>
+            </li>
           </ul>
-        </div>
       </div>
     </div>
 </div>
