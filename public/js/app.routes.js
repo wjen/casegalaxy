@@ -37,6 +37,11 @@
         templateUrl: "/templates/items.html",
         controller: "ItemsController",
         controllerAs: "vm"
+      })
+      .state("checkout", {
+        url: "/checkout",
+        templateUrl: "bower_components/ngCart/template/ngCart/cart.html",
+        controller: "CartController"
       });
 
     $urlRouterProvider.otherwise("/");

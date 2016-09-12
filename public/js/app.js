@@ -10,7 +10,15 @@
 
     .run(['authService', function(authService){
       if (authService.isLoggedIn()) authService.setUser();
-    }]);
+    }])
+
+
+
+    .controller ('CCartController', ['$scope', '$http', 'ngCart', function($scope, $http, ngCart) {
+    ngCart.setTaxRate(7.5);
+    ngCart.setShipping(2.99);
+}]);
+
 
 })();
 
