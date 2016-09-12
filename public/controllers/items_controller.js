@@ -15,7 +15,7 @@
     vm.deleteItem    = deleteItem;
     vm.updateItem   = updateItem;
     vm.postItem     = postItem;
-    // vm.resetEditForm = resetEditForm;
+    vm.resetEditForm = resetEditForm;
     vm.currentItem = itemDataService.item;
     vm.getItems();
 
@@ -84,6 +84,14 @@
         }, function(errRes) {
           console.log("Error updating Item", errRes);
         }).then(getItems);
+    }
+
+    function resetEditForm() {
+      vm.editItem = {
+        model: "",
+        manufacturer: "",
+        price: ""
+      };
     }
 
 
