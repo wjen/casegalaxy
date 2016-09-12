@@ -198,7 +198,7 @@ div.carousel-caption h3 {
 }
 
 .edit-box {
-  height: 20px;
+  height: 19px;
 }
 
 .item-links {
@@ -210,8 +210,16 @@ a:link {
 }
 
 .fa {
-color: gray;
+  color: gray;
  }
+
+.top {
+  vertical-align: text-top;
+}
+
+.btn-xs {
+ height: 19px;
+}
 
 
 
