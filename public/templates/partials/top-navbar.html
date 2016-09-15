@@ -31,10 +31,10 @@
       </ul>
       <ul class="nav navbar-nav navbar-right main-nav">
         <li><a id="nav-cart" ui-sref="cart"><ngcart-summary template-url="bower_components/ngCart/template/ngCart/summary.html"></ngcart-summary></a></li>
-        <li ui-sref-active="active" ng-hide="vm.isLoggedIn()"><a ng-click="vm.openSignUp()">Sign Up</a></li>
-        <li ui-sref-active="active" ng-hide="vm.isLoggedIn()"><a ng-click="vm.open()">Login</a></li>
-        <li ui-sref-active="active" ng-show="vm.isLoggedIn()"><a ng-click="vm.logout()">LogOut</a></li>
-        <li ui-sref-active="active" ng-show="vm.isLoggedIn()" class="dropdown">
+        <li ui-sref-active="active" ng-hide="mainCtrl.isLoggedIn()"><a ng-click="mainCtrl.openSignUp()">Sign Up</a></li>
+        <li ui-sref-active="active" ng-hide="mainCtrl.isLoggedIn()"><a ng-click="mainCtrl.open()">Login</a></li>
+        <li ui-sref-active="active" ng-show="mainCtrl.isLoggedIn()"><a ng-click="mainCtrl.logout()">LogOut</a></li>
+        <li ui-sref-active="active" ng-show="mainCtrl.isLoggedIn()" class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Another action</a></li>

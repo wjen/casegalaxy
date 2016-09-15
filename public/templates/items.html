@@ -4,39 +4,39 @@
         <form class="item-form">
           <label class="center-1">Filter By</label><br>
           <label>Search</label>
-          <input type="search" class="form-control form-group" ng-model="vm.search" placeholder="search...">
+          <input type="search" class="form-control form-group" ng-model="itemCtrl.search" placeholder="search...">
           <fieldset class="form-group">
             <label for="repeatColor">Color</label>
-            <!-- ng-model on vm.colorselect takes the value of the option -->
-            <select class="form-control" id="repeatColor" ng-model="vm.colorSelect">
+            <!-- ng-model on itemCtrl.colorselect takes the value of the option -->
+            <select class="form-control" id="repeatColor" ng-model="itemCtrl.colorSelect">
               <option value="" selected>All</option>
-              <option ng-repeat="color in vm.uniqueColors" value="{{color}}">{{color}}</option>
+              <option ng-repeat="color in itemCtrl.uniqueColors" value="{{color}}">{{color}}</option>
             </select>
           </fieldset>
           <fieldset class="form-group">
             <label for="repeatManu">Manufacturer</label>
-            <select class="form-control" id="repeatManu" ng-model="vm.manuSelect">
+            <select class="form-control" id="repeatManu" ng-model="itemCtrl.manuSelect">
               <option value="" selected>Select manufacturer</option>
-              <option ng-repeat="man in vm.uniqueMans" value="{{man}}">{{man}}</option>
+              <option ng-repeat="man in itemCtrl.uniqueMans" value="{{man}}">{{man}}</option>
             </select>
           </fieldset>
           <fieldset class="form-group">
             <label for="repeatType">Type</label>
-            <select class="form-control" id="repeatType" ng-model="vm.typeSelect">
+            <select class="form-control" id="repeatType" ng-model="itemCtrl.typeSelect">
               <option value="" selected>Select Type</option>
-              <option ng-repeat="type in vm.uniqueType" value="{{type}}">{{type}}</option>
+              <option ng-repeat="type in itemCtrl.uniqueType" value="{{type}}">{{type}}</option>
             </select>
           </fieldset>
           <!-- use of ng options  -->
           <fieldset class="form-group">
             <label for="repeatPhoneModel">Phone Model</label>
-            <select class="form-control nullable" id="repeatPhoneModel" ng-options="phoneModel for phoneModel in vm.uniquePhoneModels" ng-model="vm.phoneModelSelect">
+            <select class="form-control nullable" id="repeatPhoneModel" ng-options="phoneModel for phoneModel in itemCtrl.uniquePhoneModels" ng-model="itemCtrl.phoneModelSelect">
               <option value="" >Select Model</option>
             </select>
           </fieldset>
           <fieldset class="form-group">
             <label for="repeatItem">Price</label>
-            <select class="form-control nullable" id="repeatItem" ng-options="price for price in vm.uniquePrices" ng-model="vm.priceSelect">
+            <select class="form-control nullable" id="repeatItem" ng-options="price for price in itemCtrl.uniquePrices" ng-model="itemCtrl.priceSelect">
               <option value="" selected>Select price</option>
             </select>
           </fieldset>
@@ -44,11 +44,11 @@
 
         <!-- Add item form -->
         <div class="item-left-container-2">
-          <form class="item-form text-primary" id="new-item" name="vm.form" ng-submit="vm.postItem()">
+          <form class="item-form text-primary" id="new-item" name="itemCtrl.form" ng-submit="itemCtrl.postItem()">
             <label class="center-2">Add Item</label><br>
             <div class="form-group">
               <label for="add-category">Category</label>
-              <select class="form-control" name="item[category]" id="add-category" ng-model="vm.newItem.category" required>
+              <select class="form-control" name="item[category]" id="add-category" ng-model="itemCtrl.newItem.category" required>
                 <option value="" disabled selected>Select Category</option>
                 <option value="Phone Cases" >Phone Cases</option>
                 <option value="Screen Protectors" >Screen Protectors</option>
@@ -57,30 +57,30 @@
             </div>
             <div class="form-group">
               <label for="add-model">Phone Model</label>
-              <input class="form-control" type="text" name="item[model]" id="add-model" placeholder="iphone, galaxy note" ng-model="vm.newItem.phoneModel" required>
+              <input class="form-control" type="text" name="item[model]" id="add-model" placeholder="iphone, galaxy note" ng-model="itemCtrl.newItem.phoneModel" required>
             </div>
             <div class="form-group">
               <label for="add-manu">Manufacturer</label>
-              <input class="form-control" type="text" name="item[manufacturer]" id="add-manu" placeholder="Wdi, Casegalaxy ..." ng-model="vm.newItem.manufacturer" required>
+              <input class="form-control" type="text" name="item[manufacturer]" id="add-manu" placeholder="Wdi, Casegalaxy ..." ng-model="itemCtrl.newItem.manufacturer" required>
             </div>
             <div class="form-group">
               <label for="add-type">Type</label>
-              <input class="form-control" id="add-type" type="text" name="item[type]" placeholder="Bumper Tpu, Hybrid ..." ng-model="vm.newItem.type" required>
+              <input class="form-control" id="add-type" type="text" name="item[type]" placeholder="Bumper Tpu, Hybrid ..." ng-model="itemCtrl.newItem.type" required>
             </div>
             <div class="form-group">
               <label for="add-color">Color</label>
-              <input class="form-control" id="add-color" type="text" name="item[color]" placeholder="Red, Green, Blue ..." ng-model="vm.newItem.color" required>
+              <input class="form-control" id="add-color" type="text" name="item[color]" placeholder="Red, Green, Blue ..." ng-model="itemCtrl.newItem.color" required>
             </div>
             <div class="form-group">
               <label for="add-price">Price</label>
-              <input class="form-control" id="add-price" type="number" name="item[price]" placeholder="ex. 9.99" ng-model="vm.newItem.price" required>
+              <input class="form-control" id="add-price" type="number" name="item[price]" placeholder="ex. 9.99" ng-model="itemCtrl.newItem.price" required>
             </div>
             <div class="form-group">
               <label for="add-picture">Picture Url</label>
-              <input class="form-control" id="add-picture" type="url" name="item[picture]" placeholder="https://" ng-model="vm.newItem.picture" required>
+              <input class="form-control" id="add-picture" type="url" name="item[picture]" placeholder="https://" ng-model="itemCtrl.newItem.picture" required>
             </div>
             <div class="form-group">
-              <button class="form-control btn-success" type="submit"">Submit</button>
+              <button class="form-control btn-success" type="submit">Submit</button>
             </div>
             <div class="form-group">
               <input class="form-control btn-primary" type="reset" value="Reset" >
@@ -89,7 +89,7 @@
         </div>
       </div>
    <!-- items container -->
-      <div class="col-xs-6 col-sm-5 col-md-3 center" id="" ng-repeat="item in vm.items | filter: vm.search | filter:{color: vm.colorSelect, manufacturer: vm.manuSelect, type: vm.typeSelect, phoneModel: vm.phoneModelSelect, price: vm.priceSelect}">
+      <div class="col-xs-6 col-sm-5 col-md-3 center" id="" ng-repeat="item in itemCtrl.items | filter: itemCtrl.search | filter:{color: itemCtrl.colorSelect, manufacturer: itemCtrl.manuSelect, type: itemCtrl.typeSelect, phoneModel: itemCtrl.phoneModelSelect, price: itemCtrl.priceSelect}">
           <ul id="">
             <div class="item-boxes" ng-hide="editShow">
               <li class="item">
@@ -105,36 +105,33 @@
                 <strong>{{item.price | currency}}</strong>
               </li>
               <li class="item">
-                <a href="" class="item-links" ng-click="vm.deleteItem(item._id)">
+                <a href="" class="item-links" ng-click="itemCtrl.deleteItem(item._id)">
                   <i class="fa fa-trash-o fa-fw"></i>
                 </a>
                 <a href="" class="item-links" ng-click="editShow=true">
                   <i class="fa fa-pencil-square-o fa-fw"></i>
                 </a>
-                <ngcart-addtocart id="{{ item._id }}" name="{{ item.phoneModel }}" price="{{ item.price }}" quantity="1" template-url="bower_components/ngCart/template/ngCart/addtoCart.html" data="item">BUY</ngcart-addtocart>
-                <!-- <ngcart-cart template-url="bower_components/ngCart/template/ngcart/cart.html"></ngcart-cart> -->
-                <ngcart-checkout template-url="bower_components/ngCart/template/ngcart/checkout.html" service="paypal" settings="{ url:'/checkout' }"></ngcart-checkout>
-
               </li>
             </div>
             <div class="" ng-show="editShow">
-              <form id="edit-form"></form>
+              <form id="edit-form" ng-submit="itemCtrl.updateItem(item._id)">
                 <li class="item">
                   <a><img class="item-list-photos" ng-src="{{item.picture}}"></a>
                 </li>
                 <li class="item item-model">
-                  <input class="edit-box" type="text" name="itemName" placeholder="{{item.phoneModel}}" ng-model="vm.editItem.model" />
+                  <input class="edit-box" type="text" name="itemName" placeholder="{{item.phoneModel}}" ng-model="itemCtrl.editItem.model" />
                 </li>
                 <li class="item">
-                  <input class="edit-box" type="text" name="itemManu" placeholder="{{item.manufacturer}}" ng-model="vm.editItem.manufacturer" />
+                  <input class="edit-box" type="text" name="itemManu" placeholder="{{item.manufacturer}}" ng-model="itemCtrl.editItem.manufacturer" />
                 </li>
                 <li class="item item-price">
-                  <input class="edit-box" type="number" name="itemPrice" placeholder="{{item.price | currency}}" ng-model="vm.editItem.price" />
+                  <input class="edit-box" type="number" name="itemPrice" placeholder="{{item.price | currency}}" ng-model="itemCtrl.editItem.price" />
                 </li>
                 <li class="item">
-                  <button class="btn btn-success btn-xs top" ng-click="vm.updateItem(item._id)">Save</button>
-                  <button class="btn btn-warning btn-xs top" ng-click="editShow=false; vm.resetEditForm()">Cancel</button>
+                  <button class="btn btn-success btn-xs top" type="submit" >Save</button>
+                  <button class="btn btn-warning btn-xs top" ng-click="editShow=false; itemCtrl.resetEditForm()">Cancel</button>
                 </li>
+              </form>
             </div>
           </ul>
       </div>
