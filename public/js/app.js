@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  angular.module('caseGalaxy', ["ui.router", "ngAnimate", "ui.bootstrap", "ngCart"])
+  angular.module('caseGalaxy', ["ui.router", "ngAnimate", "ui.bootstrap"])
     .config(function($httpProvider) {
 
       // attach our auth interceptor to the http requests
