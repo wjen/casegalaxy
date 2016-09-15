@@ -112,6 +112,8 @@
                   <i class="fa fa-pencil-square-o fa-fw"></i>
                 </a>
               </li>
+              <ngcart-addtocart id="{{ item._id }}" name="{{ item.phoneModel }}" price="{{ item.price }}" quantity="1" template-url="bower_components/ngCart/template/ngCart/addtoCart.html" data="item">BUY</ngcart-addtocart>
+
             </div>
             <div class="" ng-show="editShow">
               <form id="edit-form" ng-submit="itemCtrl.updateItem(item._id)">
