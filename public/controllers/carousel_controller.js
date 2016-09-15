@@ -23,7 +23,7 @@
         text: "Protection With Style",
       },
       {
-        image: "//www.androidcentral.com/sites/androidcentral.com/files/styles/xlarge/public/article_images/2015/03/galaxy-s6-spigen-wallet-case-brown-2QL.jpg?itok=MDJQKjhK",
+        image: "https://masetv.com/wp-content/uploads/2014/09/spigen-wallet-case-iphone-6.jpg",
         title: "PREMIUM WALLET CASES",
         text: "Protection With Convenience",
       }
