@@ -64,7 +64,7 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
       <ul class="nav navbar-nav navbar-right main-nav">
-        <li><a id="nav-cart" ui-sref="checkout"><ngcart-summary template-url="bower_components/ngCart/template/ngCart/summary.html"></ngcart-summary></a></li>
+        <li><a id="nav-cart" ui-sref="cart"><ngcart-summary template-url="bower_components/ngCart/template/ngCart/summary.html"></ngcart-summary></a></li>
         <li ui-sref-active="active" ng-hide="vm.isLoggedIn()"><a ng-click="vm.openSignUp()">Sign Up</a></li>
         <li ui-sref-active="active" ng-hide="vm.isLoggedIn()"><a ng-click="vm.open()">Login</a></li>
         <li ui-sref-active="active" ng-show="vm.isLoggedIn()"><a ng-click="vm.logout()">LogOut</a></li>

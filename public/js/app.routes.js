@@ -38,10 +38,15 @@
         controller: "ItemsController",
         controllerAs: "vm"
       })
+      .state("cart", {
+        url: "/cart",
+        templateUrl: "bower_components/ngCart/template/ngCart/cart.html",
+        controller: "CartController"
+      })
       .state("checkout", {
         url: "/checkout",
-        templateUrl: "bower_components/ngCart/template/ngCart/cart.html",
-        controller: "CCartController"
+        templateUrl: "bower_components/ngCart/template/ngCart/checkout.html",
+        controller: "CartController"
       });
 
     $urlRouterProvider.otherwise("/");
