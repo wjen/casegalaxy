@@ -18,7 +18,7 @@
         text: "Dual-Layer Protection",
       },
       {
-        image: "http://store.imore.com/images/product_images/accessories/additional_images/18500/large/1.jpg",
+        image: "https://appsmartmall.com/wp-content/uploads/2015/12/iPhone-6-Case-Hotbin-Protective-Rubber-iPhone-6-Case-Crystal-Clear-Flexible-Soft-TPU-Case-Ultra-Slim-Case-for-iPhone-6-Clear-0-0.jpg",
         title: "TPU BUMPER CASES",
         text: "Protection With Style",
       },
