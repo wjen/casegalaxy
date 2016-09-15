@@ -63,7 +63,13 @@
     }
 </style>
 
-<ngcart-checkout template-url="bower_components/ngCart/template/ngcart/checkout.html" service="paypal" settings="{ url:'/checkout' }"></ngcart-checkout>
+<ngcart-checkout template-url="bower_components/ngCart/template/ngcart/checkout.html" service="paypal"
+  settings="{
+    business: 'wjen85@gmail.com',
+    item_number: 1,
+    currency_code: 1,
+    no_note: '',
+    }"></ngcart-checkout>
 
 
 

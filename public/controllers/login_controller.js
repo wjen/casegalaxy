@@ -8,21 +8,21 @@
   LoginController.$inject = ["$state", "userDataService", "$log", "authService", "$uibModalInstance"];
 
   function LoginController($state, userDataService, $log, authService, $uibModalInstance) {
-    var vm = this;
+    var loginCtrl = this;
 
-    vm.login      = login;
-    vm.isLoggedIn = authService.isLoggedIn;
-    vm.currentUser = userDataService.user;
+    loginCtrl.login      = login;
+    loginCtrl.isLoggedIn = authService.isLoggedIn;
+    loginCtrl.currentUser = userDataService.user;
 
-    vm.close = function () {
+    loginCtrl.close = function () {
       $uibModalInstance.close();
     };
 
     // Form data for login
-    vm.loginData;
+    loginCtrl.loginData;
 
     function login() {
-      authService.login(vm.loginData.email, vm.loginData.password)
+      authService.login(loginCtrl.loginData.email, loginCtrl.loginData.password)
         .then(function(res) {
           $log.log(res.data);
           $uibModalInstance.close();

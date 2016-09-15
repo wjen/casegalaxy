@@ -10,13 +10,13 @@
     $stateProvider
       .state("homePage", {
         url: "/",
-        templateUrl: "/templates/home.html",
+        templateUrl: "templates/home.html",
         controller: "CarouselController",
-        controllerAs: "vm"
+        controllerAs: "carouselCtrl"
       })
       .state("aboutPage", {
         url: "/about",
-        templateUrl:  "/templates/about.html"
+        templateUrl:  "templates/about.html"
       })
       //used modal instead
       // .state("signUpPage", {
@@ -34,9 +34,9 @@
       // })
       .state("itemsPage", {
         url: "/items",
-        templateUrl: "/templates/items.html",
+        templateUrl: "templates/items.html",
         controller: "ItemsController",
-        controllerAs: "vm"
+        controllerAs: "itemCtrl"
       })
       .state("cart", {
         url: "/cart",

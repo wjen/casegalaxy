@@ -8,18 +8,18 @@
   ItemsController.$inject = ['$state', 'authService', 'authToken', 'userDataService', '$log', "$http", "itemDataService"];
 
   function ItemsController($state, authService, authToken, userDataService, $log, $http, itemDataService) {
-    var vm = this;
-    vm.items = [];
+    var itemCtrl = this;
+    itemCtrl.items = [];
 
-    vm.getItems      = getItems;
-    vm.deleteItem    = deleteItem;
-    vm.updateItem   = updateItem;
-    vm.postItem     = postItem;
-    vm.resetEditForm = resetEditForm;
-    vm.currentItem = itemDataService.item;
-    vm.getItems();
+    itemCtrl.getItems      = getItems;
+    itemCtrl.deleteItem    = deleteItem;
+    itemCtrl.updateItem   = updateItem;
+    itemCtrl.postItem     = postItem;
+    itemCtrl.resetEditForm = resetEditForm;
+    itemCtrl.currentItem = itemDataService.item;
+    itemCtrl.getItems();
 
-    vm.newItem = {
+    itemCtrl.newItem = {
       category: "",
       phoneModel: "",
       manufacturer: "",
@@ -41,16 +41,16 @@
 
     function getItems() {
       itemDataService.all().then(function(response) {
-        vm.items = response.data;
-        // console.log(vm.items[0]);
-        vm.uniqueMans = getUnique(vm.items, 'manufacturer');
-        vm.uniqueColors = getUnique(vm.items, 'color').filter(function(color) {
+        itemCtrl.items = response.data;
+        // console.log(itemCtrl.items[0]);
+        itemCtrl.uniqueMans = getUnique(itemCtrl.items, 'manufacturer');
+        itemCtrl.uniqueColors = getUnique(itemCtrl.items, 'color').filter(function(color) {
           return color !== 'undefined';
         });
-        vm.uniqueType = getUnique(vm.items, 'type');
-        vm.uniquePhoneModels = getUnique(vm.items, "phoneModel");
-        vm.uniquePrices = getUnique(vm.items, "price");
-        // vm.phoneModelSelect = vm.items[0].phoneModel;
+        itemCtrl.uniqueType = getUnique(itemCtrl.items, 'type');
+        itemCtrl.uniquePhoneModels = getUnique(itemCtrl.items, "phoneModel");
+        itemCtrl.uniquePrices = getUnique(itemCtrl.items, "price");
+        // itemCtrl.phoneModelSelect = itemCtrl.items[0].phoneModel;
         console.log(response.data);
       }, function(errRes) {
         console.error('Error retrieving item!', errRes);
@@ -66,17 +66,17 @@
     }
 
     function postItem() {
-      $http.post('/api/items', vm.newItem)
+      $http.post('/api/items', itemCtrl.newItem)
         .then(getItems)
         .then(function(response) {
-          vm.newItem.picture = "";
+          itemCtrl.newItem.picture = "";
         });
     }
 
     function updateItem(id) {
-      $http.put('/api/items/' + id, vm.editItem)
+      $http.put('/api/items/' + id, itemCtrl.editItem)
         .then(function(response) {
-          vm.editItem = {
+          itemCtrl.editItem = {
             model: "",
             manufacturer: "",
             price: ""
@@ -87,7 +87,7 @@
     }
 
     function resetEditForm() {
-      vm.editItem = {
+      itemCtrl.editItem = {
         model: "",
         manufacturer: "",
         price: ""

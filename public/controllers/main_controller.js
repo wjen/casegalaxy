@@ -1,4 +1,4 @@
-(function () {
+(function() {
   "use strict";
 
   angular.module("caseGalaxy")
@@ -7,34 +7,28 @@
   MainController.$inject = ["$state", "userDataService", "$log", "authService", "$uibModal"];
 
   function MainController($state, userDataService, $log, authService, $uibModal) {
-    var vm = this;
-    vm.userService = userDataService;
-    vm.logout      = authService.logout;
-    vm.isLoggedIn  = authService.isLoggedIn;
+    var mainCtrl = this;
+    mainCtrl.userService = userDataService;
+    mainCtrl.logout      = authService.logout;
+    mainCtrl.isLoggedIn  = authService.isLoggedIn;
 
-    vm.$state = $state;
+    mainCtrl.$state = $state;
     //uibModal is injected and called as a ui bootstrap method
-    vm.open = function() {
+    mainCtrl.open = function() {
      var modalInstance = $uibModal.open({
          animation: true,
          templateUrl: 'templates/login.html',
-         controller: 'LoginController as vm'
+         controller: 'LoginController as loginCtrl'
      });
     };
-    vm.openSignUp = function() {
+
+    mainCtrl.openSignUp = function() {
      var modalInstance = $uibModal.open({
          animation: true,
          templateUrl: 'templates/signup.html',
-         controller: 'UsersController as vm'
+         controller: 'UsersController as userCtrl'
      });
     };
-
-    //collapse feature from ang-ui bootstrap
-    function CollapseController() {
-      vm.isCollapsed = false;
-    };
-
-
 
   };
 

@@ -7,11 +7,11 @@
   CarouselController.$inject = [];
 
   function CarouselController() {
-    var vm = this;
-    vm.myInterval = 4000;
-    vm.noWrapSlides = false;
-    vm.active = 0;
-    var slides = vm.slides = [
+    var carouselCtrl = this;
+    carouselCtrl.myInterval = 4000;
+    carouselCtrl.noWrapSlides = false;
+    carouselCtrl.active = 0;
+    var slides = carouselCtrl.slides = [
       {
         image: "//i.imgur.com/0oIek4C.jpg?1%3E%3C/div%3E%3Cdiv%20style=",
         title: "HYBRID CASES",
