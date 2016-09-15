@@ -41,7 +41,7 @@
       .state("checkout", {
         url: "/checkout",
         templateUrl: "bower_components/ngCart/template/ngCart/cart.html",
-        controller: "CartController"
+        controller: "CCartController"
       });
 
     $urlRouterProvider.otherwise("/");

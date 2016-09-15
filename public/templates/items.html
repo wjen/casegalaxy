@@ -88,11 +88,10 @@
           </form>
         </div>
       </div>
-
    <!-- items container -->
       <div class="col-xs-6 col-sm-5 col-md-3 center" id="" ng-repeat="item in vm.items | filter: vm.search | filter:{color: vm.colorSelect, manufacturer: vm.manuSelect, type: vm.typeSelect, phoneModel: vm.phoneModelSelect, price: vm.priceSelect}">
           <ul id="">
-            <div class="" ng-hide="editShow">
+            <div class="item-boxes" ng-hide="editShow">
               <li class="item">
                 <a><img class="item-list-photos" ng-src="{{item.picture}}"></a>
               </li>
@@ -115,9 +114,6 @@
                 <ngcart-addtocart id="{{ item._id }}" name="{{ item.phoneModel }}" price="{{ item.price }}" quantity="1" template-url="bower_components/ngCart/template/ngCart/addtoCart.html" data="item">BUY</ngcart-addtocart>
                 <!-- <ngcart-cart template-url="bower_components/ngCart/template/ngcart/cart.html"></ngcart-cart> -->
                 <!-- <ngcart-summary template-url="bower_components/ngCart/template/ngCart/summary.html"></ngcart-summary> -->
-                <!-- <ngcart-checkout template-url="bower_components/ngCart/template/ngcart/cart.html" service="http" settings="{ url:'/checkout' }"></ngcart-checkout> -->
-                  <ngcart-summary template-url="bower_components/ngCart/template/ngCart/summary.html"></ngcart-summary>
-
               </li>
             </div>
             <div class="" ng-show="editShow">
