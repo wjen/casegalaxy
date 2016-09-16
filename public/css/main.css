@@ -91,6 +91,8 @@ a { color: #00B7FF; }
   margin-top: 18px;
 }
 
+
+
 .example{
     background: url('../images/ingredients_bg_1.jpg') no-repeat center center fixed;
     /*background: url('../images/ingredients_bg_2.jpg') no-repeat center center fixed;*/
@@ -99,9 +101,47 @@ a { color: #00B7FF; }
     -o-background-size: cover;      /* Opera*/
     background-size: cover;         /* Generic*/
 }
+/* home body */
+.section-heading {
+  font-size: 50px;
+}
+
+.section-text, .section-text-even {
+  font-size: 20px;
+  color: black;
+}
+
+.section-text-even {
+  color: black;
+}
+
+.body-img {
+  margin: 40px 0;
+}
+
+.body-description {
+  margin: 70px auto;
+}
+
+.shop-button {
+  font-weight: 100;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.shop-button:hover {
+  color: #337ab7;
+  border-color: navy;
+}
+
+#phonecase-section {
+  background-color: #eee;
+  margin: 0 auto;
+}
+
 
 /*carousel*/
-#carousel-div {
+#carousel {
   width: 100%;
   margin: 0 auto;
   padding: 0px;
