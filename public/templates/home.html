@@ -1,7 +1,7 @@
 <section id="carousel" class="col-lg-11 col-lg-offset-1">
   <uib-carousel active="active" interval="carouselCtrl.myInterval" no-wrap="carouselCtrl.noWrapSlides">
     <uib-slide ng-repeat="slide in carouselCtrl.slides track by $index">
-      <img id="carousel-img" ng-src="{{slide.image}}">
+      <img class="img-responsive" id="carousel-img" ng-src="{{slide.image}}">
       <div class="carousel-caption ng-scope">
         <h1>{{slide.title}}</h4>
         <!-- <h3>--{{slide.text}}--</p> -->
@@ -9,21 +9,23 @@
     </uib-slide>
   </uib-carousel>
 </section>
-<div class="container" id="charger-section">
-  <!-- after row needs to come col for css -->
-  <div class="row">
-    <div class="col-sm-4 col-md-offset-1 col-md-4 col-md-offset-1 ">
-      <div class="body-description">
-        <h2 class="section-heading">Car Chargers</h2>
-        <p class="section-text">Charge on the go and never worry about running out of battery again</p>
-        <button class="btn btn-lg shop-button">Shop Chargers</button>
+<section id="charger-section">
+  <div class="container" id="charger-section">
+    <!-- after row needs to come col for css -->
+    <div class="row">
+      <div class="col-sm-4 col-md-offset-1 col-md-4 col-md-offset-1 ">
+        <div class="body-description">
+          <h2 class="section-heading">Car Chargers</h2>
+          <p class="section-text">Charge on the go and never worry about running out of battery again</p>
+          <button class="btn btn-lg shop-button">Shop Chargers</button>
+        </div>
+      </div>
+      <div class="col-sm-7 col-md-6 col-md-offset-1">
+        <img class="img-responsive body-img" src="https://cdn.igeeksblog.com/wp-content/uploads/Roker-iPhone-6-6-Plus-Car-Charger.jpg">
       </div>
     </div>
-    <div class="col-sm-7 col-md-6 col-md-offset-1">
-      <img class="img-responsive body-img" src="https://cdn.igeeksblog.com/wp-content/uploads/Roker-iPhone-6-6-Plus-Car-Charger.jpg">
-    </div>
   </div>
-</div>
+</section>
 <section id="phonecase-section">
   <div class="container">
     <div class="row">
@@ -40,5 +42,20 @@
     </div>
   </div>
 </section>
-
+<section id="screenprotector-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 col-md-offset-1 col-md-4 col-md-offset-1 ">
+        <div class="body-description">
+          <h2 class="section-heading">Screen Protectors</h2>
+          <p class="section-text-even">Tempered glass technology strenghtens screens and prevents scratches</p>
+          <button class="btn btn-lg shop-button">Shop Screen Protectors</button>
+        </div>
+      </div>
+      <div class="col-sm-7 col-md-6 col-md-offset-1">
+        <img class="img-responsive body-img" src="http://temperedglassscreenprotector.org/wp-content/uploads/2014/11/what-is-tempered-glass1.jpg">
+      </div>
+    </div>
+  </div>
+</section>
 
