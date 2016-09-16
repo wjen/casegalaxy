@@ -60,7 +60,7 @@ a { color: #00B7FF; }
 }
 
 #nav-cart{
-  padding-top: 5px;
+  padding-top: 10px;
   padding-bottom: 0px;
 }
 
@@ -263,7 +263,7 @@ div.carousel-caption h3 {
 /*ngCart*/
 
 .icon {
-    vertical-align: text-top;
+    vertical-align: middle;
     float: left;
     margin-right: 5px;
 }
