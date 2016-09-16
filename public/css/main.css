@@ -91,8 +91,6 @@ a { color: #00B7FF; }
   margin-top: 18px;
 }
 
-
-
 .example{
     background: url('../images/ingredients_bg_1.jpg') no-repeat center center fixed;
     /*background: url('../images/ingredients_bg_2.jpg') no-repeat center center fixed;*/
@@ -262,5 +260,11 @@ div.carousel-caption h3 {
  text-align: center;
 }
 
+/*ngCart*/
 
+.icon {
+    vertical-align: text-top;
+    float: left;
+    margin-right: 5px;
+}
 
