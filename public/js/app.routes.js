@@ -40,8 +40,8 @@
       })
       .state("cart", {
         url: "/cart",
-        templateUrl: "bower_components/ngCart/template/ngCart/cart.html",
-        controller: "CartController"
+        templateUrl: "templates/checkout.html",
+        controller: "ShopCartCtrl"
       })
       .state("checkout", {
         url: "/checkout",

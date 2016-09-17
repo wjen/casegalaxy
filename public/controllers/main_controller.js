@@ -30,6 +30,7 @@
      });
     };
 
+    mainCtrl.hello = "hello";
   };
 
 })();

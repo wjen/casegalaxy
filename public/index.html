@@ -24,14 +24,16 @@
 
 </head>
 <body ng-controller="MainController as mainCtrl" ng-cloak>
+<div id="wrapper">
 
-  <header ng-include="'/templates/partials/top-navbar.html'"></header>
+  <header id="header" ng-include="'/templates/partials/top-navbar.html'"></header>
 
-  <main ui-view>
+  <main autoscroll="false" id="content" ui-view>
   </main>
 
-  <footer ng-include="'/templates/partials/footer.html'"></footer>
+  <footer class="navbar-inverse" id="footer" ng-include="'/templates/partials/footer.html'"></footer>
 
+</div>
   <!-- Angular scripts -->
   <script src="js/app.js"></script>
   <script src="js/app.routes.js"></script>
@@ -45,6 +47,6 @@
   <script src="controllers/carousel_controller.js"></script>
   <script src="controllers/modal_controller.js"></script>
   <script src="controllers/items_controller.js"></script>
-  <script src="controllers/ngCartCtrl.js"></script>
+  <script src="controllers/ngCart_controller.js"></script>
 </body>
 </html>
