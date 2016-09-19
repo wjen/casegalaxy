@@ -34,6 +34,12 @@ a { color: #00B7FF; }
   padding-bottom:50px;  Height of the footer element
 }
 
+
+/*bootstrap ang ui*/
+
+/*.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }*/
+
+
 /*navbar header*/
 #homeLogo {
   height: 48px;
