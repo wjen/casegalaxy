@@ -17,6 +17,7 @@
     itemCtrl.postItem     = postItem;
     itemCtrl.resetEditForm = resetEditForm;
     itemCtrl.currentItem = itemDataService.item;
+    itemCtrl.totalItems = getItemsLength;
     itemCtrl.getItems();
 
     itemCtrl.newItem = {
@@ -27,6 +28,10 @@
       color: "",
       price: "",
       picture: "",
+    }
+
+    function getItemsLength() {
+      return itemCtrl.items.length;
     }
 
     // Object.keys returns the unique keys of each item in array

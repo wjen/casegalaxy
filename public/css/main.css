@@ -190,13 +190,6 @@ div.carousel-caption h3 {
   color: #000000;
 }
 
-/* items main container*/
-.items-main-container {
-
-}
-.item-model {
-  text-transform: uppercase;
-}
 /* items page left container*/
 .items-left-container {
   margin-top: 15px;
@@ -235,8 +228,8 @@ div.carousel-caption h3 {
 
 /* items page right container*/
 
-#items-right-container {
-
+.item-model {
+  text-transform: uppercase;
 }
 
 .item {
@@ -271,6 +264,16 @@ div.carousel-caption h3 {
 .btn-xs {
  height: 19px;
 }
+
+
+.page {
+ margin-top: 66px;
+ margin-right: auto;
+ margin-left: auto;
+ margin-bottom: 20px;
+ text-align: center;
+}
+
 
 
 /*ngCart*/

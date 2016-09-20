@@ -12,8 +12,6 @@
       if (authService.isLoggedIn()) authService.setUser();
     }])
 
-
-
 })();
 
 
