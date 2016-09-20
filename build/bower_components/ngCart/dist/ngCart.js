@@ -193,7 +193,7 @@ angular.module('ngCart', ['ngCart.directives'])
 
         this.$save = function () {
             return store.set('cart', JSON.stringify(this.getCart()));
-        }
+        };
 
     }])
 

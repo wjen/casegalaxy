@@ -22,8 +22,6 @@ gulp.task('build', function(callback) {
 gulp.task('serve', serve('build'));
 
 gulp.task('index', function(){
-
-
   return gulp.src('./public/index.html')
     .pipe(inject(gulp.src(files.app_files.tpl_src), {ignorePath: 'build'}))
     .pipe(gulp.dest(files.build_dir));

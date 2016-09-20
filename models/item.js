@@ -12,7 +12,7 @@ var itemSchema = new Schema({
   manufacturer: { type: String, trim: true},
   type:         { type: String, trim: true},
   color:        { type: String, trim: true},
-  price:        { type: Number },
+  price:        { type: Number, trim: true},
   picture:      { type: String, trim: true},
   phoneModel:   { type: String, trim: true}
 });
