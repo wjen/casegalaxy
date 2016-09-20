@@ -34,7 +34,7 @@
       // })
       .state("itemsPage", {
         url: "/items",
-        templateUrl: "templates/items.html",
+        templateUrl: "./templates/items.html",
         controller: "ItemsController",
         controllerAs: "itemCtrl"
       })

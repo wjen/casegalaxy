@@ -6,6 +6,7 @@ var gulp        = require('gulp'),
     inject      = require('gulp-inject'),
     serve       = require('gulp-serve'),
     jshint      = require('gulp-jshint'),
+    concat      = require('gulp-concat');
 
 
 var files = require('./gulp/gulp.config.js');
@@ -28,7 +29,7 @@ gulp.task('index', function(){
 });
 
 gulp.task('clean', function(){
-  //return the promise
+  //retrun the promise
   return del([files.build_dir], {force: true})
 });
 
