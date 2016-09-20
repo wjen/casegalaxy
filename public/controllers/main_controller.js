@@ -31,6 +31,8 @@
     };
 
     mainCtrl.hello = "hello";
+
+
   };
 
 })();

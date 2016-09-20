@@ -1,5 +1,5 @@
 angular.module('caseGalaxy')
-.controller('PaginationDemoCtrl', function ($log) {
+.controller('PaginationDemoCtrl', function ($log, $anchorScroll) {
   var paginationCtrl = this;
   paginationCtrl.totalItems = 64;
   paginationCtrl.currentPage = 1;
@@ -10,6 +10,8 @@ angular.module('caseGalaxy')
 
   paginationCtrl.pageChanged = function() {
     $log.log('Page changed to: ' + paginationCtrl.currentPage);
+    $anchorScroll();
+
   };
 
   paginationCtrl.maxSize = 5;
