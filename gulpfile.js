@@ -5,7 +5,7 @@ var gulp        = require('gulp'),
     del         = require('del'),
     inject      = require('gulp-inject'),
     serve       = require('gulp-serve'),
-    jshint      = require('gulp-jshint');
+    jshint      = require('gulp-jshint'),
 
 
 var files = require('./gulp/gulp.config.js');
@@ -28,11 +28,21 @@ gulp.task('index', function(){
 });
 
 gulp.task('clean', function(){
-  //retrun the promise
+  //return the promise
   return del([files.build_dir], {force: true})
 });
 
-gulp.task('copy-build', ['copy-assets', 'copy-app-js', 'copy-vendor-js']);
+gulp.task('copy-build', ['copy-html', 'copy-json', 'copy-assets', 'copy-app-js', 'copy-vendor-js']);
+
+gulp.task('copy-html', function () {
+  return gulp.src(['./public/**/*.html', '!./public/index.html'])
+    .pipe(gulp.dest(files.build_dir));
+});
+
+gulp.task('copy-json', function () {
+  return gulp.src('./public/**/*.json')
+    .pipe(gulp.dest(files.build_dir));
+});
 
 gulp.task('copy-assets', function(){
   return gulp.src('./public/assets/**/*')
@@ -58,3 +68,5 @@ gulp.task('lint', function(){
 gulp.task('watch', function(){
   gulp.watch(files.app_files.js, ['lint', 'build']);
 });
+
+

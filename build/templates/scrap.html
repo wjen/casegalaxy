@@ -1,0 +1,42 @@
+
+
+
+
+
+<!--       <form class="form-inline" ng-show="showme" id="edit-form">
+        <br>
+        <div class="form-group">
+          <input type="text" name='fishName' id="fish-name" placeholder="{{fish.name}}" class="form-control" ng-model="vm.editFish.name" />
+        </div>
+        <select class="form-control" name="fishCategory" id="fish-category" ng-model="vm.editFish.category">
+            <option value="Fish">Fish</option>
+            <option value="Clothing">Clothing</option>
+            <option value="Corpse">Corpse</option>
+            <option value="Trash">Trash</option>
+        </select>
+        <button class="btn btn-success btn-xs" ng-click="vm.updateFish(fish._id)">Save</button>
+        <button class="btn btn-default btn-xs" ng-click="showme=false; vm.resetEditForm();">Cancel</button>
+
+      </form>
+ -->
+
+
+<div class="container">
+  <ul class="nav nav-tabs">
+    <li role="presentation" ui-sref-active="active">
+      <a ui-sref="homePage">Home</a>
+    </li>
+    <li role="presentation" ui-sref-active="active">
+      <a ui-sref="aboutPage">About</a>
+    </li>
+    <li role="presentation" ui-sref-active="active" ng-hide="vm.isLoggedIn()">
+      <a ui-sref="signUpPage">Sign Up</a>
+    </li>
+    <li role="presentation" ui-sref-active="active" ng-hide="vm.isLoggedIn()">
+      <a ui-sref="loginPage">Login</a>
+    </li>
+    <li ng-show="vm.isLoggedIn()">
+      <a class="btn" ng-click="vm.logout()">Logout {{ vm.userService.user.name }}</a>
+    </li>
+  </ul>
+</div>
