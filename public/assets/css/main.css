@@ -1,0 +1,309 @@
+.modal-title {
+  color: #5DBCD2;
+  letter-spacing: 4px;
+}
+
+.main-background {
+  background-color: #5DBCD2;
+}
+
+.btn-main {
+  background-color: #5DBCD2;
+  color: white;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  /*font-family: "Lucida Grande", Helvetica, Arial, sans-serif;*/
+  font-family: 'Lato', sans-serif;
+  padding: 26px 0px 0px 0px;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+}
+
+a { color: #00B7FF; }
+
+#wrapper {
+  min-height:100%;
+  position:relative;
+}
+
+#content {
+  padding-bottom:50px;
+}
+
+
+
+/*bootstrap ang ui*/
+
+/*.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }*/
+
+
+/*navbar header*/
+#homeLogo {
+  height: 48px;
+  width: 120px;
+}
+.navbar-brand {
+  padding: 0;
+  margin-top: 2px;
+}
+.main-nav li:hover {
+  background-color: #5DBCD2;
+}
+.dropdown-menu li a:hover {
+  background-color: #5DBCD2;
+  color: white;
+}
+.dropdown-menu {
+  padding: 0;
+  top: 52px;
+}
+.dropdown-menu .divider {
+  margin: 0px;
+  height: 1px;
+}
+.dropdown-menu > li > a {
+  padding: 10px 20px;
+}
+.first{
+  clear: both;
+}
+
+#nav-cart{
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+#topnav {
+  display: block;
+  margin-bottom: 20px;
+  clear: both;
+}
+
+.cen-jus {
+  text-align: center;
+}
+
+.left-jus {
+  float: left;
+}
+
+.right-jus {
+  float: right;
+}
+.submit-buttons {
+  margin-bottom: 22px;
+  margin-top: 18px;
+}
+
+
+/* footer*/
+
+#footer {
+  width:100%;
+  height:50px;
+  position:absolute;
+  bottom:0;
+  text-align: center;
+  color: white;
+}
+
+/* home body */
+.section-heading {
+  font-size: 50px;
+}
+
+.section-text, .section-text-even {
+  font-size: 20px;
+  color: black;
+}
+
+.section-text-even {
+  color: black;
+}
+
+.body-img {
+  margin: 40px 0;
+}
+
+.body-description {
+  margin: 70px auto;
+}
+
+.shop-button {
+  font-weight: 100;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.shop-button:hover {
+  color: #337ab7;
+  border-color: navy;
+}
+
+#phonecase-section {
+  background-color: #eee;
+  margin: 0 auto;
+}
+
+
+/*carousel*/
+#carousel {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+#carousel-img {
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 500px;
+}
+
+div.carousel-caption {
+  width: auto;
+  padding: 0px;
+  background-color: #ffffff;
+  border: 1px solid white;
+  opacity: 0.6;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 15px;
+}
+
+div.carousel-caption h1 {
+  font-weight: bold;
+  color: red;
+}
+div.carousel-caption h3 {
+  font-weight: bold;
+  color: #000000;
+}
+
+/* items page left container*/
+.items-left-container {
+  margin-top: 15px;
+  -moz-box-shadow:0 0 6px rgba(3,3,3,0.6);
+  -webkit-box-shadow:0 0 6px rgba(3,3,3,0.6);
+  box-shadow:0 0 6px rgba(3,3,3,0.6);
+  padding: 0;
+}
+.item-form {
+  padding: 10px;
+}
+.item-left-container-2 {
+  padding: 0;
+  background-color: #eee;
+}
+.center {
+  text-align: center;
+}
+.center-1 {
+  text-align: center;
+  margin-bottom: 0;
+  border-bottom: 1px solid gray;
+  display: block;
+  text-transform: uppercase;
+}
+
+.center-2 {
+  text-align: center;
+  margin-bottom: 0;
+  border-bottom: 1px solid #337ab7;
+  display: block;
+  text-transform: uppercase;
+
+}
+
+
+/* items page right container*/
+
+.item-model {
+  text-transform: uppercase;
+}
+
+.item {
+  list-style-type: none;
+  margin-top: 5px;
+}
+.item-list-photos {
+  height: 200px;
+  width: 100%;
+}
+
+.item-model {
+  text-transform: uppercase;
+}
+
+.edit-box {
+  height: 19px;
+}
+
+.item-links {
+  text-decoration: none;
+}
+
+.fa {
+  color: gray;
+ }
+
+.top {
+  vertical-align: text-top;
+}
+
+.btn-xs {
+ height: 19px;
+}
+
+
+.page {
+ margin-top: 66px;
+ margin-right: auto;
+ margin-left: auto;
+ margin-bottom: 20px;
+ text-align: center;
+}
+
+
+
+/*ngCart*/
+
+.inline-title {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.icon {
+  vertical-align: middle;
+  float: left;
+  margin-right: 5px;
+}
+
+
+/* modals */
+.modal-header {
+  min-height: 16.42857143px;
+  padding: 15px;
+  border-bottom: 1px solid #B8B6B6;
+  text-align: center;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.modal-body {
+  position: relative;
+  padding: 15px;
+  min-height: 200px;
+}
+
+.modal-footer {
+  padding: 15px;
+  text-align: right;
+  border-top: 1px solid #B8B6B6;
+
+}
+
