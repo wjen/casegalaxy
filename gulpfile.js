@@ -79,7 +79,7 @@ gulp.task('scripts', function() {
       './public/bower_components/ngCart/dist/ngCart.js'
     ])
         .pipe(concat('all.js'))
-        .pipe(gulp.dest('public/js'));
+        .pipe(gulp.dest('build/js'));
 });
 
 gulp.task('styles', ['scripts'], function() {
@@ -87,6 +87,6 @@ gulp.task('styles', ['scripts'], function() {
         './public/assets/**/*'
     ])
         .pipe(concat('styles.css'))
-        .pipe(gulp.dest('public/assets/css'));
+        .pipe(gulp.dest('build/assets/css'));
 });
 
