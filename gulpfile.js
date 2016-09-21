@@ -13,11 +13,11 @@ var files = require('./gulp/gulp.config.js');
 
 //default task
 gulp.task('default', function(callback) {
-  runSequence('build', 'watch', 'serve', callback);
+  runSequence('build', 'watch', callback);
 });
 
 gulp.task('build', function(callback) {
-  runSequence('clean', 'copy-build', 'index', callback);
+  runSequence('clean', 'scripts', 'styles', 'copy-build', 'index', callback);
 });
 
 gulp.task('serve', serve('build'));
@@ -29,7 +29,7 @@ gulp.task('index', function(){
 });
 
 gulp.task('clean', function(){
-  //retrun the promise
+  //return the promise
   return del([files.build_dir], {force: true})
 });
 
@@ -61,13 +61,32 @@ gulp.task('copy-vendor-js', function(){
 });
 
 gulp.task('lint', function(){
-  return gulp.src(files.app_files.js)
+  return gulp.src(files.app_files.js_css)
     .pipe(jshint())
     .pipe(jshint.reporter('default'));
 });
 
 gulp.task('watch', function(){
-  gulp.watch(files.app_files.js, ['lint', 'build']);
+  gulp.watch(files.app_files.js_css, ['lint', 'build']);
 });
 
+gulp.task('scripts', function() {
+    return gulp.src([
+      './public/js/app.js',
+      './public/js/app.routes.js',
+      './public/controllers/**/*.js',
+      './public/services/**/*.js',
+      './public/bower_components/ngCart/dist/ngCart.js'
+    ])
+        .pipe(concat('all.js'))
+        .pipe(gulp.dest('public/js'));
+});
+
+gulp.task('styles', ['scripts'], function() {
+    return gulp.src([
+        './public/assets/**/*'
+    ])
+        .pipe(concat('styles.css'))
+        .pipe(gulp.dest('public/assets/css'));
+});
 
