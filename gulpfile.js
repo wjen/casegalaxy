@@ -6,7 +6,8 @@ var gulp        = require('gulp'),
     inject      = require('gulp-inject'),
     serve       = require('gulp-serve'),
     jshint      = require('gulp-jshint'),
-    concat      = require('gulp-concat');
+    concat      = require('gulp-concat'),
+    uglify      = require('gulp-uglify');
 
 
 var files = require('./gulp/gulp.config.js');
@@ -70,6 +71,8 @@ gulp.task('watch', function(){
   gulp.watch(files.app_files.js_css, ['lint', 'build']);
 });
 
+
+// gulp concat to add all files in a single file for js and css in the build
 gulp.task('scripts', function() {
     return gulp.src([
       './public/js/app.js',
@@ -89,4 +92,5 @@ gulp.task('styles', ['scripts'], function() {
         .pipe(concat('styles.css'))
         .pipe(gulp.dest('build/assets/css'));
 });
+
 
