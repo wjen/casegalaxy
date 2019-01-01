@@ -433,4 +433,84 @@ Express is now listening on port 3000.
 [0mGET /templates/items.html [36m304 [0m0.739 ms - -[0m
 [0mGET /api/items/ [36m304 [0m112.991 ms - -[0m
 [0mGET /bower_components/ngCart/template/ngCart/addtocart.html [36m304 [0m0.544 ms - -[0m
-^C[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi/casegalaxy]1;..di/casegalaxy[0m[27m[24m[J[39m[0m[49m[40m[39m ✝ [44m[30m[30m code/wdi/casegalaxy [43m[34m[30m  master± [49m[33m[39m [K[?1h=[?2004h
+^C[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi/casegalaxy]1;..di/casegalaxy[0m[27m[24m[J[39m[0m[49m[40m[39m ✝ [44m[30m[30m code/wdi/casegalaxy [43m[34m[30m  master± [49m[33m[39m [K[?1h=[?2004hggit add . [?1l>[?2004l
+]2;git add .]1;gitg[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi/casegalaxy]1;..di/casegalaxyi[0m[27m[24m[J[39m[0m[49m[40m[39m ✝ [44m[30m[30m code/wdi/casegalaxy [43m[34m[30m  master± [49m[33m[39m [K[?1h=[?2004hggit up  pus    g  aait  a  ggit commit -m "ud pdate images"[?1l>[?2004l
+]2;git commit -m "update images"]1;git[master 45eb4f3] update images
+ 19 files changed, 451 insertions(+), 24 deletions(-)
+ create mode 100644 build/assets/images/1.JPG
+ create mode 100644 build/assets/images/car_charger.jpg
+ create mode 100644 build/assets/images/iphone8 (125).jpg
+ create mode 100644 build/assets/images/iphone8 (19).jpg
+ create mode 100644 public/assets/images/1.JPG
+ create mode 100644 public/assets/images/car_charger.jpg
+ create mode 100644 public/assets/images/iphone8 (125).jpg
+ create mode 100644 public/assets/images/iphone8 (19).jpg
+ create mode 100644 seed
+[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi/casegalaxy]1;..di/casegalaxy[0m[27m[24m[J[39m[0m[49m[40m[39m ✝ [44m[30m[30m code/wdi/casegalaxy [43m[34m[30m  master± [49m[33m[39m [K[?1h=[?2004hggit oc  push ori   [?1l>[?2004l
+]2;git push]1;gitCounting objects: 26, done.
+Delta compression using up to 4 threads.
+Compressing objects:   3% (1/26)   Compressing objects:   7% (2/26)   Compressing objects:  11% (3/26)   Compressing objects:  15% (4/26)   Compressing objects:  19% (5/26)   Compressing objects:  23% (6/26)   Compressing objects:  26% (7/26)   Compressing objects:  30% (8/26)   Compressing objects:  34% (9/26)   Compressing objects:  38% (10/26)   Compressing objects:  42% (11/26)   Compressing objects:  46% (12/26)   Compressing objects:  50% (13/26)   Compressing objects:  53% (14/26)   Compressing objects:  57% (15/26)   Compressing objects:  61% (16/26)   Compressing objects:  65% (17/26)   Compressing objects:  69% (18/26)   Compressing objects:  73% (19/26)   Compressing objects:  76% (20/26)   Compressing objects:  80% (21/26)   Compressing objects:  84% (22/26)   Compressing objects:  88% (23/26)   Compressing objects:  92% (24/26)   Compressing objects:  96% (25/26)   Compressing objects: 100% (26/26)   Compressing objects: 100% (26/26), done.
+Writing objects:   3% (1/26)   Writing objects:   7% (2/26)   Writing objects:  11% (3/26)   Writing objects:  15% (4/26)   Writing objects:  19% (5/26)   Writing objects:  19% (5/26), 1.30 MiB | 844.00 KiB/s   Writing objects:  19% (5/26), 1.91 MiB | 667.00 KiB/s   Writing objects:  23% (6/26), 1.91 MiB | 667.00 KiB/s   Writing objects:  26% (7/26), 1.91 MiB | 667.00 KiB/s   Writing objects:  26% (7/26), 2.55 MiB | 596.00 KiB/s   Writing objects:  30% (8/26), 2.55 MiB | 596.00 KiB/s   Writing objects:  34% (9/26), 2.55 MiB | 596.00 KiB/s   Writing objects:  34% (9/26), 3.19 MiB | 562.00 KiB/s   Writing objects:  38% (10/26), 3.19 MiB | 562.00 KiB/s   Writing objects:  38% (10/26), 3.81 MiB | 540.00 KiB/s   Writing objects:  42% (11/26), 3.81 MiB | 540.00 KiB/s   Writing objects:  46% (12/26), 3.81 MiB | 540.00 KiB/s   Writing objects:  50% (13/26), 3.81 MiB | 540.00 KiB/s   Writing objects:  53% (14/26), 3.81 MiB | 540.00 KiB/s   Writing objects:  57% (15/26), 3.81 MiB | 540.00 KiB/s   Writing objects:  61% (16/26), 3.81 MiB | 540.00 KiB/s   Writing objects:  65% (17/26), 3.81 MiB | 540.00 KiB/s   Writing objects:  69% (18/26), 3.81 MiB | 540.00 KiB/s   Writing objects:  73% (19/26), 3.81 MiB | 540.00 KiB/s   Writing objects:  76% (20/26), 3.81 MiB | 540.00 KiB/s   Writing objects:  80% (21/26), 3.81 MiB | 540.00 KiB/s   Writing objects:  84% (22/26), 3.81 MiB | 540.00 KiB/s   Writing objects:  88% (23/26), 3.81 MiB | 540.00 KiB/s   Writing objects:  92% (24/26), 3.81 MiB | 540.00 KiB/s   Writing objects:  96% (25/26), 3.81 MiB | 540.00 KiB/s   Writing objects: 100% (26/26), 3.81 MiB | 540.00 KiB/s   Writing objects: 100% (26/26), 4.38 MiB | 540.00 KiB/s, done.
+Total 26 (delta 12), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/12)   [Kremote: Resolving deltas:   8% (1/12)   [Kremote: Resolving deltas:  16% (2/12)   [Kremote: Resolving deltas:  25% (3/12)   [Kremote: Resolving deltas:  33% (4/12)   [Kremote: Resolving deltas:  41% (5/12)   [Kremote: Resolving deltas:  50% (6/12)   [Kremote: Resolving deltas:  58% (7/12)   [Kremote: Resolving deltas:  66% (8/12)   [Kremote: Resolving deltas:  75% (9/12)   [Kremote: Resolving deltas:  83% (10/12)   [Kremote: Resolving deltas:  91% (11/12)   [Kremote: Resolving deltas: 100% (12/12)   [Kremote: Resolving deltas: 100% (12/12), completed with 12 local objects.[K
+git   git pu  To git@github.com:wjen/casegalaxy.git
+   02c4fa2..45eb4f3  master -> master
+[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi/casegalaxy]1;..di/casegalaxy[0m[27m[24m[J[39m[0m[49m[40m[39m ✝ [44m[30m[30m code/wdi/casegalaxy [43m[34m[30m  master± [49m[33m[39m [K[?1h=[?2004hggit  g  ggit  g  ...[?1l>[?2004l
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi]1;~/code/wdi[0m[27m[24m[J[39m[0m[49m[40m[39m ✝ [44m[30m[30m ~/code/wdi [49m[34m[39m [K[?1h=[?2004hccd c  ccd [?1l>[?2004l
+]2;cd]1;cd[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~]1;~[0m[27m[24m[J[39m[0m[49m[40m[39m ✝ [44m[30m[30m ~ [49m[34m[39m [K[?1h=[?2004hd ccd code/we di[1m/[0m[0m [?1l>[?2004l
+]2;cd code/wdi]1;cd[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi]1;~/code/wdi[0m[27m[24m[J[39m[0m[49m[40m[39m ✝ [44m[30m[30m ~/code/wdi [49m[34m[39m [K[?1h=[?2004hlll[?1l>[?2004l
+]2;ls -G -lh]1;lltotal 0
+drwxr-xr-x  14 wenjen  staff   448B Jul 17  2016 [1m[36mKitchen-Counter[39;49m[0m
+drwxr-xr-x   9 wenjen  staff   288B Jun  7  2016 [1m[36mWDI_DTLA_10[39;49m[0m
+drwxr-xr-x   8 wenjen  staff   256B Dec 22 18:15 [1m[36mblackjack[39;49m[0m
+drwxr-xr-x  12 wenjen  staff   384B May 12  2016 [1m[36mcard-starter[39;49m[0m
+drwxr-xr-x  21 wenjen  staff   672B Jan  1 13:17 [1m[36mcasegalaxy[39;49m[0m
+drwxr-xr-x  19 wenjen  staff   608B May 26  2016 [1m[36mcoffeeshop[39;49m[0m
+drwxr-xr-x  14 wenjen  staff   448B Jun 20  2016 [1m[36mderrys_fishin_api[39;49m[0m
+drwxr-xr-x  12 wenjen  staff   384B Jul 15  2016 [1m[36mderrys_fishin_friends[39;49m[0m
+drwxr-xr-x   3 wenjen  staff    96B Jan  1 13:01 [1m[36mfirst-express[39;49m[0m
+drwxr-xr-x  18 wenjen  staff   576B Jun  1  2016 [1m[36mfishe_nested[39;49m[0m
+drwxr-xr-x   5 wenjen  staff   160B Jul 14  2016 [1m[36mionic-mastermind[39;49m[0m
+drwxr-xr-x   8 wenjen  staff   256B Aug 12  2016 [1m[36mmean_template[39;49m[0m
+drwxr-xr-x  19 wenjen  staff   608B Jun  3  2016 [1m[36mmrworldwide_tv_app[39;49m[0m
+drwxr-xr-x  15 wenjen  staff   480B Jul 15  2016 [1m[36mrest-api-sample-app-nodejs[39;49m[0m
+drwxr-xr-x  15 wenjen  staff   480B Jul  1  2016 [1m[36mwander[39;49m[0m
+drwxr-xr-x   7 wenjen  staff   224B May 13  2016 [1m[36mwhackamole[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi]1;~/code/wdi[0m[27m[24m[J[39m[0m[49m[40m[39m ✝ [44m[30m[30m ~/code/wdi [49m[34m[39m [K[?1h=[?2004hccd wdiWDI_DTLA_10[1m/[0m[0m            casegalaxy[1m/[0m[0m [?1l>[?2004l
+]2;cd casegalaxy]1;cd[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi/casegalaxy]1;..di/casegalaxy[0m[27m[24m[J[39m[0m[49m[40m[39m ✝ [44m[30m[30m code/wdi/casegalaxy [43m[34m[30m  master± [49m[33m[39m [K[?1h=[?2004hlll[?1l>[?2004l
+]2;ls -G -lh]1;lltotal 120
+-rw-r--r--    1 wenjen  staff    32B Jul 18  2016 README.md
+drwxr-xr-x    3 wenjen  staff    96B Sep  9  2016 [1m[36mbin[39;49m[0m
+-rw-r--r--    1 wenjen  staff   401B Sep 16  2016 bower.json
+drwxr-xr-x    9 wenjen  staff   288B Jan  1 13:17 [1m[36mbuild[39;49m[0m
+drwxr-xr-x    6 wenjen  staff   192B Sep  9  2016 [1m[36mconfig[39;49m[0m
+drwxr-xr-x    7 wenjen  staff   224B Sep  9  2016 [1m[36mcontrollers[39;49m[0m
+drwxr-xr-x    3 wenjen  staff    96B Sep 20  2016 [1m[36mgulp[39;49m[0m
+-rw-r--r--    1 wenjen  staff   2.5K Sep 21  2016 gulpfile.js
+drwxr-xr-x    5 wenjen  staff   160B Sep  9  2016 [1m[36mmodels[39;49m[0m
+drwxr-xr-x  445 wenjen  staff    14K Sep 21  2016 [1m[36mnode_modules[39;49m[0m
+-rw-r--r--    1 wenjen  staff   915B Sep 21  2016 package.json
+drwxr-xr-x   10 wenjen  staff   320B Jan  1 12:24 [1m[36mpublic[39;49m[0m
+-rw-r--r--    1 wenjen  staff    39K Jan  1 13:24 seed
+-rw-r--r--    1 wenjen  staff   2.3K Sep 23  2016 server.js
+drwxr-xr-x    2 wenjen  staff    64B Sep 20  2016 [1m[36mvendor[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi/casegalaxy]1;..di/casegalaxy[0m[27m[24m[J[39m[0m[49m[40m[39m ✝ [44m[30m[30m code/wdi/casegalaxy [43m[34m[30m  master± [49m[33m[39m [K[?1h=[?2004h...[?1l>[?2004l
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi]1;~/code/wdi[0m[27m[24m[J[39m[0m[49m[40m[39m ✝ [44m[30m[30m ~/code/wdi [49m[34m[39m [K[?1h=[?2004hccd casegalaxy[1m/[0m[0m [?1l>[?2004l
+]2;cd casegalaxy]1;cd[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi/casegalaxy]1;..di/casegalaxy[0m[27m[24m[J[39m[0m[49m[40m[39m ✝ [44m[30m[30m code/wdi/casegalaxy [43m[34m[30m  master± [49m[33m[39m [K[?1h=[?2004hlll[?1l>[?2004l
+]2;ls -G -lh]1;lltotal 128
+-rw-r--r--    1 wenjen  staff    32B Jul 18  2016 README.md
+drwxr-xr-x    3 wenjen  staff    96B Sep  9  2016 [1m[36mbin[39;49m[0m
+-rw-r--r--    1 wenjen  staff   401B Sep 16  2016 bower.json
+drwxr-xr-x    9 wenjen  staff   288B Jan  1 13:17 [1m[36mbuild[39;49m[0m
+drwxr-xr-x    6 wenjen  staff   192B Sep  9  2016 [1m[36mconfig[39;49m[0m
+drwxr-xr-x    7 wenjen  staff   224B Sep  9  2016 [1m[36mcontrollers[39;49m[0m
+drwxr-xr-x    3 wenjen  staff    96B Sep 20  2016 [1m[36mgulp[39;49m[0m
+-rw-r--r--    1 wenjen  staff   2.5K Sep 21  2016 gulpfile.js
+drwxr-xr-x    5 wenjen  staff   160B Sep  9  2016 [1m[36mmodels[39;49m[0m
+drwxr-xr-x  445 wenjen  staff    14K Sep 21  2016 [1m[36mnode_modules[39;49m[0m
+-rw-r--r--    1 wenjen  staff   915B Sep 21  2016 package.json
+drwxr-xr-x   10 wenjen  staff   320B Jan  1 12:24 [1m[36mpublic[39;49m[0m
+-rw-r--r--    1 wenjen  staff    43K Jan  1 13:24 seed
+-rw-r--r--    1 wenjen  staff   2.3K Sep 23  2016 server.js
+drwxr-xr-x    2 wenjen  staff    64B Sep 20  2016 [1m[36mvendor[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi/casegalaxy]1;..di/casegalaxy[0m[27m[24m[J[39m[0m[49m[40m[39m ✝ [44m[30m[30m code/wdi/casegalaxy [43m[34m[30m  master± [49m[33m[39m [K[?1h=[?2004hggit add
