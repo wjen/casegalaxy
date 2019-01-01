@@ -1,0 +1,436 @@
+Script started on Tue Jan  1 13:03:29 2019
+/Users/wenjen/.zshrc:.:22: no such file or directory: /Users/wenjen/z.sh
+[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi/casegalaxy]1;..di/casegalaxy[0m[27m[24m[J[39m[0m[49m[40m[39m ✝ [44m[30m[30m code/wdi/casegalaxy [43m[34m[30m  master± [49m[33m[39m [K[?1h=[?2004hrrun sed ed[?1l>[?2004l
+]2;run seed]1;runzsh: command not found: run
+[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi/casegalaxy]1;..di/casegalaxy[0m[27m[24m[J[39m[0m[49m[40m[39m [31m✘[40m[39m ✝ [44m[30m[30m code/wdi/casegalaxy [43m[34m[30m  master± [49m[33m[39m [K[?1h=[?2004hlll[?1l>[?2004l
+]2;ls -G -lh]1;lltotal 48
+-rw-r--r--    1 wenjen  staff    32B Jul 18  2016 README.md
+drwxr-xr-x    3 wenjen  staff    96B Sep  9  2016 [1m[36mbin[39;49m[0m
+-rw-r--r--    1 wenjen  staff   401B Sep 16  2016 bower.json
+drwxr-xr-x    9 wenjen  staff   288B Jan  1 12:37 [1m[36mbuild[39;49m[0m
+drwxr-xr-x    6 wenjen  staff   192B Sep  9  2016 [1m[36mconfig[39;49m[0m
+drwxr-xr-x    7 wenjen  staff   224B Sep  9  2016 [1m[36mcontrollers[39;49m[0m
+drwxr-xr-x    3 wenjen  staff    96B Sep 20  2016 [1m[36mgulp[39;49m[0m
+-rw-r--r--    1 wenjen  staff   2.5K Sep 21  2016 gulpfile.js
+drwxr-xr-x    5 wenjen  staff   160B Sep  9  2016 [1m[36mmodels[39;49m[0m
+drwxr-xr-x  445 wenjen  staff    14K Sep 21  2016 [1m[36mnode_modules[39;49m[0m
+-rw-r--r--    1 wenjen  staff   915B Sep 21  2016 package.json
+drwxr-xr-x   10 wenjen  staff   320B Jan  1 12:24 [1m[36mpublic[39;49m[0m
+-rw-r--r--    1 wenjen  staff    43B Jan  1 13:03 seed
+-rw-r--r--    1 wenjen  staff   2.3K Sep 23  2016 server.js
+drwxr-xr-x    2 wenjen  staff    64B Sep 20  2016 [1m[36mvendor[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi/casegalaxy]1;..di/casegalaxy[0m[27m[24m[J[39m[0m[49m[40m[39m ✝ [44m[30m[30m code/wdi/casegalaxy [43m[34m[30m  master± [49m[33m[39m [K[?1h=[?2004hnnpm run seed[?1l>[?2004l
+]2;npm run seed]1;npm
+> casegalaxy@0.0.0 seed /Users/wenjen/code/wdi/casegalaxy
+> node ./config/seeds.js
+
+Database seeded with 16 items
+
+[33m[39m
+[33m   ╭─────────────────────────────────────╮[39m
+   [33m│[39m                                     [33m│[39m
+   [33m│[39m   Update available [2m5.6.0[22m[0m → [0m[32m6.5.0[39m    [33m│[39m
+   [33m│[39m     Run [36mnpm i -g npm[39m to update      [33m│[39m
+   [33m│[39m                                     [33m│[39m
+[33m   ╰─────────────────────────────────────╯[39m
+[33m[39m
+[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi/casegalaxy]1;..di/casegalaxy[0m[27m[24m[J[39m[0m[49m[40m[39m ✝ [44m[30m[30m code/wdi/casegalaxy [43m[34m[30m  master± [49m[33m[39m [K[?1h=[?2004hnnpm run start[?1l>[?2004l
+]2;npm run start]1;npm
+> casegalaxy@0.0.0 start /Users/wenjen/code/wdi/casegalaxy
+> node ./bin/www
+
+Express is now listening on port 3000.
+[0mGET / [32m200 [0m15.831 ms - 1824[0m
+[0mGET /js/all.js [32m200 [0m1.198 ms - 34365[0m
+[0mGET /assets/css/styles.css [32m200 [0m2.113 ms - 2446326[0m
+[0mGET /templates/partials/top-navbar.html [32m200 [0m1.972 ms - 2660[0m
+[0mGET /templates/partials/footer.html [32m200 [0m6.085 ms - 50[0m
+[0mGET /templates/home.html [32m200 [0m1.201 ms - 2826[0m
+[0mGET /bower_components/ngCart/template/ngCart/summary.html [32m200 [0m0.922 ms - 1651[0m
+[0mGET /assets/images/pcgf2.png [32m200 [0m0.545 ms - 14953[0m
+[0mGET /assets/images/iphone8%20(125).jpg [32m200 [0m1.004 ms - 755487[0m
+[0mGET /assets/images/iphone8%20(19).jpg [32m200 [0m2.728 ms - 715420[0m
+[0mGET /assets/images/1.JPG [32m200 [0m2.520 ms - 953579[0m
+[0mGET /assets/images/pcgico.png [32m200 [0m1.756 ms - 2389[0m
+[0mGET /templates/checkout.html [32m200 [0m0.502 ms - 5032[0m
+[0mGET /templates/items.html [32m200 [0m0.872 ms - 7979[0m
+[0mGET /api/items/ [32m200 [0m136.643 ms - 4108[0m
+[0mGET /bower_components/ngCart/template/ngCart/addtocart.html [32m200 [0m0.498 ms - 567[0m
+[0mGET /templates/signup.html [32m200 [0m0.724 ms - 1748[0m
+[0mGET /templates/items.html [36m304 [0m5.040 ms - -[0m
+[0mGET /api/items/ [36m304 [0m101.121 ms - -[0m
+[0mGET /bower_components/ngCart/template/ngCart/addtocart.html [36m304 [0m1.361 ms - -[0m
+[0mGET /templates/home.html [36m304 [0m0.352 ms - -[0m
+[0mGET /assets/images/iphone8%20(125).jpg [36m304 [0m2.648 ms - -[0m
+[0mGET /assets/images/1.JPG [36m304 [0m2.826 ms - -[0m
+[0mGET /assets/images/iphone8%20(19).jpg [36m304 [0m2.959 ms - -[0m
+[0mGET /assets/css/styles.css [36m304 [0m0.660 ms - -[0m
+[0mGET / [36m304 [0m0.867 ms - -[0m
+[0mGET /assets/css/styles.css [36m304 [0m1.248 ms - -[0m
+[0mGET /js/all.js [36m304 [0m0.595 ms - -[0m
+[0mGET /templates/partials/top-navbar.html [36m304 [0m0.481 ms - -[0m
+[0mGET /templates/partials/footer.html [36m304 [0m0.553 ms - -[0m
+[0mGET /templates/home.html [36m304 [0m0.443 ms - -[0m
+[0mGET /assets/images/pcgf2.png [36m304 [0m0.386 ms - -[0m
+[0mGET /bower_components/ngCart/template/ngCart/summary.html [36m304 [0m0.408 ms - -[0m
+[0mGET /assets/images/iphone8%20(125).jpg [36m304 [0m0.788 ms - -[0m
+[0mGET /assets/images/1.JPG [36m304 [0m0.786 ms - -[0m
+[0mGET /assets/images/iphone8%20(19).jpg [36m304 [0m0.392 ms - -[0m
+[0mGET /assets/images/pcgico.png [32m200 [0m1.044 ms - 2389[0m
+^C[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi/casegalaxy]1;..di/casegalaxy[0m[27m[24m[J[39m[0m[49m[40m[39m ✝ [44m[30m[30m code/wdi/casegalaxy [43m[34m[30m  master± [49m[33m[39m [K[?1h=[?2004hnpm run start[?1l>[?2004l
+]2;npm run start]1;npm
+> casegalaxy@0.0.0 start /Users/wenjen/code/wdi/casegalaxy
+> node ./bin/www
+
+Express is now listening on port 3000.
+[0mGET / [36m304 [0m14.458 ms - -[0m
+[0mGET /assets/css/styles.css [36m304 [0m1.515 ms - -[0m
+[0mGET /js/all.js [36m304 [0m0.900 ms - -[0m
+[0mGET /templates/partials/top-navbar.html [36m304 [0m0.534 ms - -[0m
+[0mGET /templates/partials/footer.html [36m304 [0m0.546 ms - -[0m
+[0mGET /templates/home.html [36m304 [0m0.501 ms - -[0m
+[0mGET /bower_components/ngCart/template/ngCart/summary.html [36m304 [0m0.596 ms - -[0m
+[0mGET /assets/images/pcgf2.png [36m304 [0m0.651 ms - -[0m
+[0mGET /assets/images/iphone8%20(125).jpg [36m304 [0m1.612 ms - -[0m
+[0mGET /assets/images/1.JPG [36m304 [0m1.367 ms - -[0m
+[0mGET /assets/images/iphone8%20(19).jpg [36m304 [0m1.180 ms - -[0m
+[0mGET /assets/css/styles.css [36m304 [0m0.534 ms - -[0m
+^C[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi/casegalaxy]1;..di/casegalaxy[0m[27m[24m[J[39m[0m[49m[40m[39m ✝ [44m[30m[30m code/wdi/casegalaxy [43m[34m[30m  master± [49m[33m[39m [K[?1h=[?2004hnnpm coy p    n  ggulp copy-build[?1l>[?2004l
+]2;gulp copy-build]1;gulp[[90m13:11:31[39m] Using gulpfile [35m~/code/wdi/casegalaxy/gulpfile.js[39m
+[[90m13:11:31[39m] Starting '[36mcopy-html[39m'...
+[[90m13:11:31[39m] Starting '[36mcopy-json[39m'...
+[[90m13:11:31[39m] Starting '[36mcopy-assets[39m'...
+[[90m13:11:31[39m] Starting '[36mcopy-app-js[39m'...
+[[90m13:11:31[39m] Starting '[36mcopy-vendor-js[39m'...
+[[90m13:11:31[39m] Finished '[36mcopy-vendor-js[39m' after [35m8.48 ms[39m
+[[90m13:11:31[39m] Finished '[36mcopy-json[39m' after [35m61 ms[39m
+[[90m13:11:31[39m] Finished '[36mcopy-assets[39m' after [35m95 ms[39m
+[[90m13:11:32[39m] Finished '[36mcopy-html[39m' after [35m110 ms[39m
+[[90m13:11:32[39m] Finished '[36mcopy-app-js[39m' after [35m116 ms[39m
+[[90m13:11:32[39m] Starting '[36mcopy-build[39m'...
+[[90m13:11:32[39m] Finished '[36mcopy-build[39m' after [35m63 μs[39m
+[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi/casegalaxy]1;..di/casegalaxy[0m[27m[24m[J[39m[0m[49m[40m[39m ✝ [44m[30m[30m code/wdi/casegalaxy [43m[34m[30m  master± [49m[33m[39m [K[?1h=[?2004hgulp copy-build[15Dnpm run start  [?1l>[?2004l
+]2;npm run start]1;npm
+> casegalaxy@0.0.0 start /Users/wenjen/code/wdi/casegalaxy
+> node ./bin/www
+
+Express is now listening on port 3000.
+[0mGET / [36m304 [0m6.364 ms - -[0m
+[0mGET /assets/css/styles.css [36m304 [0m11.348 ms - -[0m
+[0mGET /js/all.js [36m304 [0m10.918 ms - -[0m
+[0mGET /templates/partials/top-navbar.html [32m200 [0m4.371 ms - 2660[0m
+[0mGET /templates/partials/footer.html [32m200 [0m5.413 ms - 50[0m
+[0mGET /templates/home.html [32m200 [0m1.644 ms - 2775[0m
+[0mGET /assets/images/pcgf2.png [32m200 [0m1.010 ms - 14953[0m
+[0mGET /bower_components/ngCart/template/ngCart/summary.html [32m200 [0m1.196 ms - 1651[0m
+[0mGET /assets/images/iphone8%20(125).jpg [32m200 [0m0.760 ms - 755487[0m
+[0mGET /assets/images/1.JPG [32m200 [0m1.667 ms - 953579[0m
+[0mGET /assets/images/iphone8%20(19).jpg [32m200 [0m1.515 ms - 715420[0m
+[0mGET /assets/images/car_charger.jpg [32m200 [0m1.848 ms - 30514[0m
+[0mGET /assets/images/pcgico.png [32m200 [0m0.874 ms - 2389[0m
+[0mGET /templates/items.html [32m200 [0m1.521 ms - 7979[0m
+[0mGET /api/items/ [36m304 [0m111.560 ms - -[0m
+[0mGET /bower_components/ngCart/template/ngCart/addtocart.html [32m200 [0m0.880 ms - 567[0m
+[0mGET /assets/css/styles.css [36m304 [0m1.700 ms - -[0m
+^C[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi/casegalaxy]1;..di/casegalaxy[0m[27m[24m[J[39m[0m[49m[40m[39m ✝ [44m[30m[30m code/wdi/casegalaxy [43m[34m[30m  master± [49m[33m[39m [K[?1h=[?2004hggulp co  s   g  nnode run seed[?1l>[?2004l
+]2;node run seed]1;nodemodule.js:549
+    throw err;
+    ^
+
+Error: Cannot find module '/Users/wenjen/code/wdi/casegalaxy/run'
+    at Function.Module._resolveFilename (module.js:547:15)
+    at Function.Module._load (module.js:474:25)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi/casegalaxy]1;..di/casegalaxy[0m[27m[24m[J[39m[0m[49m[40m[39m [31m✘[40m[39m ✝ [44m[30m[30m code/wdi/casegalaxy [43m[34m[30m  master± [49m[33m[39m [K[?1h=[?2004hnnod n  nnpm start      seed[?1l>[?2004l
+]2;npm seed]1;npm
+Usage: npm <command>
+
+where <command> is one of:
+    access, adduser, bin, bugs, c, cache, completion, config,
+    ddp, dedupe, deprecate, dist-tag, docs, doctor, edit,
+    explore, get, help, help-search, i, init, install,
+    install-test, it, link, list, ln, login, logout, ls,
+    outdated, owner, pack, ping, prefix, profile, prune,
+    publish, rb, rebuild, repo, restart, root, run, run-script,
+    s, se, search, set, shrinkwrap, star, stars, start, stop, t,
+    team, test, token, tst, un, uninstall, unpublish, unstar,
+    up, update, v, version, view, whoami
+
+npm <command> -h     quick help on <command>
+npm -l           display full usage info
+npm help <term>  search for help on <term>
+npm help npm     involved overview
+
+Specify configs in the ini-formatted file:
+    /Users/wenjen/.npmrc
+or on the command line via: npm <command> --key value
+Config info can be viewed via: npm help config
+
+npm@5.6.0 /usr/local/lib/node_modules/npm
+
+Did you mean one of these?
+    se
+    set
+[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi/casegalaxy]1;..di/casegalaxy[0m[27m[24m[J[39m[0m[49m[40m[39m [31m✘[40m[39m ✝ [44m[30m[30m code/wdi/casegalaxy [43m[34m[30m  master± [49m[33m[39m [K[?1h=[?2004hnno[?1l>[?2004l
+]2;no]1;nozsh: command not found: no
+[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi/casegalaxy]1;..di/casegalaxy[0m[27m[24m[J[39m[0m[49m[40m[39m [31m✘[40m[39m ✝ [44m[30m[30m code/wdi/casegalaxy [43m[34m[30m  master± [49m[33m[39m [K[?1h=[?2004hnnon  nnpm run seed[?1l>[?2004l
+]2;npm run seed]1;npm
+> casegalaxy@0.0.0 seed /Users/wenjen/code/wdi/casegalaxy
+> node ./config/seeds.js
+
+Database seeded with 15 items
+[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi/casegalaxy]1;..di/casegalaxy[0m[27m[24m[J[39m[0m[49m[40m[39m ✝ [44m[30m[30m code/wdi/casegalaxy [43m[34m[30m  master± [49m[33m[39m [K[?1h=[?2004hnnpm  n  n nnpm oc   n  ggulp[?1l>[?2004l
+]2;gulp]1;gulp[[90m13:14:47[39m] Using gulpfile [35m~/code/wdi/casegalaxy/gulpfile.js[39m
+[[90m13:14:47[39m] Starting '[36mdefault[39m'...
+[[90m13:14:47[39m] Starting '[36mbuild[39m'...
+[[90m13:14:47[39m] Starting '[36mclean[39m'...
+[[90m13:14:47[39m] Finished '[36mclean[39m' after [35m24 ms[39m
+[[90m13:14:47[39m] Starting '[36mscripts[39m'...
+[[90m13:14:48[39m] Finished '[36mscripts[39m' after [35m44 ms[39m
+[[90m13:14:48[39m] Starting '[36mscripts[39m'...
+[[90m13:14:48[39m] Finished '[36mscripts[39m' after [35m14 ms[39m
+[[90m13:14:48[39m] Starting '[36mstyles[39m'...
+[[90m13:14:48[39m] Finished '[36mstyles[39m' after [35m21 ms[39m
+[[90m13:14:48[39m] Starting '[36mcopy-html[39m'...
+[[90m13:14:48[39m] Starting '[36mcopy-json[39m'...
+[[90m13:14:48[39m] Starting '[36mcopy-assets[39m'...
+[[90m13:14:48[39m] Starting '[36mcopy-app-js[39m'...
+[[90m13:14:48[39m] Starting '[36mcopy-vendor-js[39m'...
+[[90m13:14:48[39m] Finished '[36mcopy-vendor-js[39m' after [35m3.19 ms[39m
+[[90m13:14:48[39m] Finished '[36mcopy-json[39m' after [35m41 ms[39m
+[[90m13:14:48[39m] Finished '[36mcopy-assets[39m' after [35m75 ms[39m
+[[90m13:14:48[39m] Finished '[36mcopy-html[39m' after [35m84 ms[39m
+[[90m13:14:48[39m] Finished '[36mcopy-app-js[39m' after [35m97 ms[39m
+[[90m13:14:48[39m] Starting '[36mcopy-build[39m'...
+[[90m13:14:48[39m] Finished '[36mcopy-build[39m' after [35m66 μs[39m
+[[90m13:14:48[39m] Starting '[36mindex[39m'...
+[[90m13:14:48[39m] [35mgulp-inject[39m [36m2[39m files into [35mindex.html[39m.
+[[90m13:14:48[39m] Finished '[36mindex[39m' after [35m26 ms[39m
+[[90m13:14:48[39m] Finished '[36mbuild[39m' after [35m233 ms[39m
+[[90m13:14:48[39m] Starting '[36mwatch[39m'...
+[[90m13:14:48[39m] Finished '[36mwatch[39m' after [35m44 ms[39m
+[[90m13:14:48[39m] Finished '[36mdefault[39m' after [35m278 ms[39m
+^C
+[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi/casegalaxy]1;..di/casegalaxy[0m[27m[24m[J[39m[0m[49m[40m[39m [31m✘[40m[39m ✝ [44m[30m[30m code/wdi/casegalaxy [43m[34m[30m  master± [49m[33m[39m [K[?1h=[?2004hllll  nnpm run star        n  gulpnpm run seed    strat[?1l>[?2004l
+]2;npm run strat]1;npm[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m missing script: strat
+[0m
+[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m A complete log of this run can be found in:
+[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m     /Users/wenjen/.npm/_logs/2019-01-01T21_15_04_427Z-debug.log
+[0m[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi/casegalaxy]1;..di/casegalaxy[0m[27m[24m[J[39m[0m[49m[40m[39m [31m✘[40m[39m ✝ [44m[30m[30m code/wdi/casegalaxy [43m[34m[30m  master± [49m[33m[39m [K[?1h=[?2004hnpm run strat   art[?1l>[?2004l
+]2;npm run start]1;npm
+> casegalaxy@0.0.0 start /Users/wenjen/code/wdi/casegalaxy
+> node ./bin/www
+
+Express is now listening on port 3000.
+[0mGET / [32m200 [0m7.701 ms - 1824[0m
+[0mGET /js/all.js [32m200 [0m1.779 ms - 34365[0m
+[0mGET /assets/css/styles.css [32m200 [0m2.170 ms - 2476841[0m
+[0mGET /templates/partials/top-navbar.html [32m200 [0m1.414 ms - 2660[0m
+[0mGET /templates/partials/footer.html [32m200 [0m0.792 ms - 50[0m
+[0mGET /templates/home.html [32m200 [0m0.684 ms - 2775[0m
+[0mGET /assets/images/pcgf2.png [32m200 [0m0.718 ms - 14953[0m
+[0mGET /bower_components/ngCart/template/ngCart/summary.html [32m200 [0m0.683 ms - 1651[0m
+[0mGET /assets/images/car_charger.jpg [32m200 [0m4.064 ms - 30514[0m
+[0mGET /assets/images/iphone8%20(125).jpg [32m200 [0m2.526 ms - 755487[0m
+[0mGET /assets/images/iphone8%20(19).jpg [32m200 [0m2.612 ms - 715420[0m
+[0mGET /assets/images/1.JPG [32m200 [0m4.361 ms - 953579[0m
+[0mGET /templates/items.html [32m200 [0m1.096 ms - 7979[0m
+[0mGET /api/items/ [36m304 [0m136.972 ms - -[0m
+[0mGET /bower_components/ngCart/template/ngCart/addtocart.html [32m200 [0m4.689 ms - 567[0m
+^C[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi/casegalaxy]1;..di/casegalaxy[0m[27m[24m[J[39m[0m[49m[40m[39m ✝ [44m[30m[30m code/wdi/casegalaxy [43m[34m[30m  master± [49m[33m[39m [K[?1h=[?2004hnnpm coyp  py-build[?1l>[?2004l
+]2;npm copy-build]1;npm
+Usage: npm <command>
+
+where <command> is one of:
+    access, adduser, bin, bugs, c, cache, completion, config,
+    ddp, dedupe, deprecate, dist-tag, docs, doctor, edit,
+    explore, get, help, help-search, i, init, install,
+    install-test, it, link, list, ln, login, logout, ls,
+    outdated, owner, pack, ping, prefix, profile, prune,
+    publish, rb, rebuild, repo, restart, root, run, run-script,
+    s, se, search, set, shrinkwrap, star, stars, start, stop, t,
+    team, test, token, tst, un, uninstall, unpublish, unstar,
+    up, update, v, version, view, whoami
+
+npm <command> -h     quick help on <command>
+npm -l           display full usage info
+npm help <term>  search for help on <term>
+npm help npm     involved overview
+
+Specify configs in the ini-formatted file:
+    /Users/wenjen/.npmrc
+or on the command line via: npm <command> --key value
+Config info can be viewed via: npm help config
+
+npm@5.6.0 /usr/local/lib/node_modules/npm
+
+Did you mean this?
+    rebuild
+[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi/casegalaxy]1;..di/casegalaxy[0m[27m[24m[J[39m[0m[49m[40m[39m [31m✘[40m[39m ✝ [44m[30m[30m code/wdi/casegalaxy [43m[34m[30m  master± [49m[33m[39m [K[?1h=[?2004hnnon  nnpm  n  ggulp copy-build[?1l>[?2004l
+]2;gulp copy-build]1;gulp[[90m13:16:01[39m] Using gulpfile [35m~/code/wdi/casegalaxy/gulpfile.js[39m
+[[90m13:16:01[39m] Starting '[36mcopy-html[39m'...
+[[90m13:16:01[39m] Starting '[36mcopy-json[39m'...
+[[90m13:16:01[39m] Starting '[36mcopy-assets[39m'...
+[[90m13:16:01[39m] Starting '[36mcopy-app-js[39m'...
+[[90m13:16:01[39m] Starting '[36mcopy-vendor-js[39m'...
+[[90m13:16:01[39m] Finished '[36mcopy-vendor-js[39m' after [35m7.71 ms[39m
+[[90m13:16:01[39m] Finished '[36mcopy-json[39m' after [35m50 ms[39m
+[[90m13:16:01[39m] Finished '[36mcopy-assets[39m' after [35m79 ms[39m
+[[90m13:16:01[39m] Finished '[36mcopy-html[39m' after [35m91 ms[39m
+[[90m13:16:01[39m] Finished '[36mcopy-app-js[39m' after [35m97 ms[39m
+[[90m13:16:01[39m] Starting '[36mcopy-build[39m'...
+[[90m13:16:01[39m] Finished '[36mcopy-build[39m' after [35m176 μs[39m
+[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi/casegalaxy]1;..di/casegalaxy[0m[27m[24m[J[39m[0m[49m[40m[39m ✝ [44m[30m[30m code/wdi/casegalaxy [43m[34m[30m  master± [49m[33m[39m [K[?1h=[?2004hgulp copy-build[15Dnpm[P[11C [10Drun start [?1l>[?2004l
+]2;npm run start]1;npm
+> casegalaxy@0.0.0 start /Users/wenjen/code/wdi/casegalaxy
+> node ./bin/www
+
+Express is now listening on port 3000.
+[0mGET / [36m304 [0m5.822 ms - -[0m
+[0mGET /assets/css/styles.css [36m304 [0m3.064 ms - -[0m
+[0mGET /js/all.js [36m304 [0m2.484 ms - -[0m
+[0mGET /templates/partials/top-navbar.html [32m200 [0m6.083 ms - 2660[0m
+[0mGET /templates/partials/footer.html [32m200 [0m9.804 ms - 50[0m
+[0mGET /templates/items.html [32m200 [0m1.791 ms - 7979[0m
+[0mGET /assets/images/pcgf2.png [32m200 [0m0.560 ms - 14953[0m
+[0mGET /bower_components/ngCart/template/ngCart/summary.html [32m200 [0m1.897 ms - 1651[0m
+[0mGET /api/items/ [36m304 [0m116.271 ms - -[0m
+[0mGET /bower_components/ngCart/template/ngCart/addtocart.html [32m200 [0m0.619 ms - 567[0m
+[0mGET /assets/images/pcgico.png [32m200 [0m1.167 ms - 2389[0m
+gul   v ^C[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi/casegalaxy]1;..di/casegalaxy[0m[27m[24m[J[39m[0m[49m[40m[39m ✝ [44m[30m[30m code/wdi/casegalaxy [43m[34m[30m  master± [49m[33m[39m [K[?1h=[?2004hggulp cleean[?1l>[?2004l
+]2;gulp cleean]1;gulp[[90m13:17:04[39m] Using gulpfile [35m~/code/wdi/casegalaxy/gulpfile.js[39m
+[[90m13:17:04[39m] [31mTask 'cleean' is not in your gulpfile[39m
+[[90m13:17:04[39m] Please check the documentation for proper gulpfile formatting
+[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi/casegalaxy]1;..di/casegalaxy[0m[27m[24m[J[39m[0m[49m[40m[39m [31m✘[40m[39m ✝ [44m[30m[30m code/wdi/casegalaxy [43m[34m[30m  master± [49m[33m[39m [K[?1h=[?2004hgglup  g gulp clean[?1l>[?2004l
+]2;gulp clean]1;gulp[[90m13:17:07[39m] Using gulpfile [35m~/code/wdi/casegalaxy/gulpfile.js[39m
+[[90m13:17:07[39m] Starting '[36mclean[39m'...
+[[90m13:17:08[39m] Finished '[36mclean[39m' after [35m20 ms[39m
+[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi/casegalaxy]1;..di/casegalaxy[0m[27m[24m[J[39m[0m[49m[40m[39m ✝ [44m[30m[30m code/wdi/casegalaxy [43m[34m[30m  master± [49m[33m[39m [K[?1h=[?2004hgulp cleanean[11Dnpm run start[?1l>[?2004l
+]2;npm run start]1;npm
+> casegalaxy@0.0.0 start /Users/wenjen/code/wdi/casegalaxy
+> node ./bin/www
+
+Express is now listening on port 3000.
+[0mGET / [33m404 [0m7.007 ms - 46[0m
+[0mGET /favicon.ico [32m200 [0m2.118 ms - 2389[0m
+[0mGET / [33m404 [0m2.097 ms - 46[0m
+^[[A    ^C[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi/casegalaxy]1;..di/casegalaxy[0m[27m[24m[J[39m[0m[49m[40m[39m ✝ [44m[30m[30m code/wdi/casegalaxy [43m[34m[30m  master± [49m[33m[39m [K[?1h=[?2004hggulp s [?1l>[?2004l
+]2;gulp]1;gulp[[90m13:17:42[39m] Using gulpfile [35m~/code/wdi/casegalaxy/gulpfile.js[39m
+[[90m13:17:42[39m] Starting '[36mdefault[39m'...
+[[90m13:17:42[39m] Starting '[36mbuild[39m'...
+[[90m13:17:42[39m] Starting '[36mclean[39m'...
+[[90m13:17:42[39m] Finished '[36mclean[39m' after [35m3.58 ms[39m
+[[90m13:17:42[39m] Starting '[36mscripts[39m'...
+[[90m13:17:42[39m] Finished '[36mscripts[39m' after [35m38 ms[39m
+[[90m13:17:42[39m] Starting '[36mscripts[39m'...
+[[90m13:17:42[39m] Finished '[36mscripts[39m' after [35m13 ms[39m
+[[90m13:17:42[39m] Starting '[36mstyles[39m'...
+[[90m13:17:42[39m] Finished '[36mstyles[39m' after [35m11 ms[39m
+[[90m13:17:42[39m] Starting '[36mcopy-html[39m'...
+[[90m13:17:42[39m] Starting '[36mcopy-json[39m'...
+[[90m13:17:42[39m] Starting '[36mcopy-assets[39m'...
+[[90m13:17:42[39m] Starting '[36mcopy-app-js[39m'...
+[[90m13:17:42[39m] Starting '[36mcopy-vendor-js[39m'...
+[[90m13:17:42[39m] Finished '[36mcopy-vendor-js[39m' after [35m2.77 ms[39m
+[[90m13:17:42[39m] Finished '[36mcopy-json[39m' after [35m43 ms[39m
+[[90m13:17:42[39m] Finished '[36mcopy-assets[39m' after [35m81 ms[39m
+[[90m13:17:42[39m] Finished '[36mcopy-html[39m' after [35m88 ms[39m
+[[90m13:17:42[39m] Finished '[36mcopy-app-js[39m' after [35m132 ms[39m
+[[90m13:17:42[39m] Starting '[36mcopy-build[39m'...
+[[90m13:17:42[39m] Finished '[36mcopy-build[39m' after [35m61 μs[39m
+[[90m13:17:42[39m] Starting '[36mindex[39m'...
+[[90m13:17:42[39m] [35mgulp-inject[39m [36m2[39m files into [35mindex.html[39m.
+[[90m13:17:42[39m] Finished '[36mindex[39m' after [35m24 ms[39m
+[[90m13:17:42[39m] Finished '[36mbuild[39m' after [35m227 ms[39m
+[[90m13:17:42[39m] Starting '[36mwatch[39m'...
+[[90m13:17:42[39m] Finished '[36mwatch[39m' after [35m37 ms[39m
+[[90m13:17:42[39m] Finished '[36mdefault[39m' after [35m265 ms[39m
+c ^C
+[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi/casegalaxy]1;..di/casegalaxy[0m[27m[24m[J[39m[0m[49m[40m[39m [31m✘[40m[39m ✝ [44m[30m[30m code/wdi/casegalaxy [43m[34m[30m  master± [49m[33m[39m [K[?1h=[?2004hgulp npm run start[?1l>[?2004l
+]2;npm run start]1;npm
+> casegalaxy@0.0.0 start /Users/wenjen/code/wdi/casegalaxy
+> node ./bin/www
+
+Express is now listening on port 3000.
+[0mGET / [32m200 [0m8.949 ms - 1824[0m
+[0mGET /js/all.js [32m200 [0m2.307 ms - 34365[0m
+[0mGET /assets/css/styles.css [32m200 [0m3.259 ms - 2476841[0m
+[0mGET /templates/partials/top-navbar.html [32m200 [0m0.748 ms - 2660[0m
+[0mGET /templates/partials/footer.html [32m200 [0m1.650 ms - 50[0m
+[0mGET /templates/home.html [32m200 [0m0.920 ms - 2775[0m
+[0mGET /bower_components/ngCart/template/ngCart/summary.html [32m200 [0m0.669 ms - 1651[0m
+[0mGET /assets/images/pcgf2.png [32m200 [0m0.547 ms - 14953[0m
+[0mGET /assets/images/car_charger.jpg [32m200 [0m0.926 ms - 30514[0m
+[0mGET /assets/images/iphone8%20(125).jpg [32m200 [0m2.484 ms - 755487[0m
+[0mGET /assets/images/iphone8%20(19).jpg [32m200 [0m2.935 ms - 715420[0m
+[0mGET /assets/images/1.JPG [32m200 [0m1.590 ms - 953579[0m
+[0mGET /assets/images/pcgico.png [32m200 [0m2.130 ms - 2389[0m
+[0mGET /templates/items.html [32m200 [0m0.547 ms - 7979[0m
+[0mGET /api/items/ [36m304 [0m108.744 ms - -[0m
+[0mGET /bower_components/ngCart/template/ngCart/addtocart.html [32m200 [0m1.789 ms - 567[0m
+[0mGET /assets/css/styles.css [36m304 [0m1.489 ms - -[0m
+^C[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi/casegalaxy]1;..di/casegalaxy[0m[27m[24m[J[39m[0m[49m[40m[39m ✝ [44m[30m[30m code/wdi/casegalaxy [43m[34m[30m  master± [49m[33m[39m [K[?1h=[?2004hgglg gulp serve[?1l>[?2004l
+]2;gulp serve]1;gulp[[90m13:20:30[39m] Using gulpfile [35m~/code/wdi/casegalaxy/gulpfile.js[39m
+[[90m13:20:30[39m] Starting '[36mserve[39m'...
+[[90m13:20:30[39m] Finished '[36mserve[39m' after [35m1.4 ms[39m
+[[90m13:20:30[39m] [34mServer started at http://127.0.0.1:3000[39m
+npm     ^C
+[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi/casegalaxy]1;..di/casegalaxy[0m[27m[24m[J[39m[0m[49m[40m[39m [31m✘[40m[39m ✝ [44m[30m[30m code/wdi/casegalaxy [43m[34m[30m  master± [49m[33m[39m [K[?1h=[?2004hnnode   n  nnpm s run st  seee d[?1l>[?2004l
+]2;npm run seed]1;npm
+> casegalaxy@0.0.0 seed /Users/wenjen/code/wdi/casegalaxy
+> node ./config/seeds.js
+
+Database seeded with 15 items
+[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi/casegalaxy]1;..di/casegalaxy[0m[27m[24m[J[39m[0m[49m[40m[39m ✝ [44m[30m[30m code/wdi/casegalaxy [43m[34m[30m  master± [49m[33m[39m [K[?1h=[?2004hnnpm  n  nnpm run start[?1l>[?2004l
+]2;npm run start]1;npm
+> casegalaxy@0.0.0 start /Users/wenjen/code/wdi/casegalaxy
+> node ./bin/www
+
+Express is now listening on port 3000.
+^C[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi/casegalaxy]1;..di/casegalaxy[0m[27m[24m[J[39m[0m[49m[40m[39m ✝ [44m[30m[30m code/wdi/casegalaxy [43m[34m[30m  master± [49m[33m[39m [K[?1h=[?2004hnpm run start[?1l>[?2004l
+]2;npm run start]1;npm
+> casegalaxy@0.0.0 start /Users/wenjen/code/wdi/casegalaxy
+> node ./bin/www
+
+Express is now listening on port 3000.
+[0mGET / [36m304 [0m11.277 ms - -[0m
+[0mGET /assets/css/styles.css [36m304 [0m6.088 ms - -[0m
+[0mGET /js/all.js [36m304 [0m3.924 ms - -[0m
+[0mGET /templates/partials/top-navbar.html [36m304 [0m0.668 ms - -[0m
+[0mGET /templates/partials/footer.html [36m304 [0m0.536 ms - -[0m
+[0mGET /templates/home.html [36m304 [0m1.367 ms - -[0m
+[0mGET /bower_components/ngCart/template/ngCart/summary.html [36m304 [0m0.581 ms - -[0m
+[0mGET /assets/images/pcgf2.png [36m304 [0m0.598 ms - -[0m
+[0mGET /assets/images/car_charger.jpg [36m304 [0m0.959 ms - -[0m
+[0mGET /assets/images/iphone8%20(125).jpg [36m304 [0m0.629 ms - -[0m
+[0mGET /assets/images/1.JPG [36m304 [0m1.126 ms - -[0m
+[0mGET /assets/images/iphone8%20(19).jpg [36m304 [0m1.258 ms - -[0m
+[0mGET /templates/items.html [36m304 [0m0.899 ms - -[0m
+[0mGET /api/items/ [36m304 [0m109.424 ms - -[0m
+[0mGET /bower_components/ngCart/template/ngCart/addtocart.html [36m304 [0m0.823 ms - -[0m
+[0mDELETE /api/items/57daf777c813a40300d74d1c [32m200 [0m92.615 ms - 26[0m
+[0mGET /api/items/ [32m200 [0m92.816 ms - 3830[0m
+^C[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi/casegalaxy]1;..di/casegalaxy[0m[27m[24m[J[39m[0m[49m[40m[39m ✝ [44m[30m[30m code/wdi/casegalaxy [43m[34m[30m  master± [49m[33m[39m [K[?1h=[?2004hnpm run start[?1l>[?2004l
+]2;npm run start]1;npm
+> casegalaxy@0.0.0 start /Users/wenjen/code/wdi/casegalaxy
+> node ./bin/www
+
+Express is now listening on port 3000.
+[0mGET / [36m304 [0m16.461 ms - -[0m
+[0mGET /assets/css/styles.css [36m304 [0m3.836 ms - -[0m
+[0mGET /js/all.js [36m304 [0m3.523 ms - -[0m
+[0mGET /templates/partials/top-navbar.html [36m304 [0m0.568 ms - -[0m
+[0mGET /templates/partials/footer.html [36m304 [0m0.830 ms - -[0m
+[0mGET /templates/home.html [36m304 [0m0.564 ms - -[0m
+[0mGET /bower_components/ngCart/template/ngCart/summary.html [36m304 [0m0.400 ms - -[0m
+[0mGET /assets/images/pcgf2.png [36m304 [0m1.216 ms - -[0m
+[0mGET /assets/images/car_charger.jpg [36m304 [0m0.717 ms - -[0m
+[0mGET /assets/images/iphone8%20(125).jpg [36m304 [0m3.645 ms - -[0m
+[0mGET /assets/images/1.JPG [36m304 [0m1.906 ms - -[0m
+[0mGET /assets/images/iphone8%20(19).jpg [36m304 [0m1.672 ms - -[0m
+[0mGET /templates/items.html [36m304 [0m0.739 ms - -[0m
+[0mGET /api/items/ [36m304 [0m112.991 ms - -[0m
+[0mGET /bower_components/ngCart/template/ngCart/addtocart.html [36m304 [0m0.544 ms - -[0m
+^C[1m[7m%[27m[1m[0m                                                                                          ]2;wenjen@wens-MacBook-Pro-2: ~/code/wdi/casegalaxy]1;..di/casegalaxy[0m[27m[24m[J[39m[0m[49m[40m[39m ✝ [44m[30m[30m code/wdi/casegalaxy [43m[34m[30m  master± [49m[33m[39m [K[?1h=[?2004h

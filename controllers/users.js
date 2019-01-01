@@ -103,7 +103,7 @@ var tokenVerify = function(req, res, next) {
 var userCreate = function(req, res) {
   var user          = new User();   // create a new instance of the User model
   user.name         = req.body.name;  // set the users name (comes from the request)
-  user.email        = req.body.email;  // set the users phone number (comes from the request)
+  user.email        = req.body.email;  // set the users email (comes from the request)
   user.password     = req.body.password;  // set the users password (comes from the request)
 
   user.save(function(err) {
